@@ -1,0 +1,75 @@
+h1, h2, p {
+	margin: 0;
+	padding: 0;
+}
+.need_help_h1 h1 {
+	font-family: $arimo;
+	font-weight: 600;
+	font-size: 36px;
+	text-transform: uppercase;
+	color: #000000;
+	text-align: center;
+}
+.need-help__block {
+	width: 312px;
+	height: 288px;
+	background-color: #F5F6F6;
+	padding-left: 31px;
+	padding-top: 26px;
+}
+.need-help__icon {
+	width: 60px;
+	height: 60px;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.need_help_help_to_choose {
+	background-image: url(../images/icons/icon_hand.svg);
+}
+.need_help_estimate_the_cost {
+	background-image: url(../images/icons/icon_rule.svg);
+}
+.need_help_find_installers {
+	background-image: url(../images/icons/icon_men.svg);
+}
+.need_help_answer_the_questions {
+	background-image: url(../images/icons/icon_phone.svg);
+}
+.need_help_options h2 {
+	font-family: $arimo;
+	font-weight: 600;
+	font-size: 24px;
+	color: #000000;
+}
+.need_help_options p {
+	font-family: $open;
+	font-weight: 400;
+	font-size: 16px;
+	color: #000000;
+}
+.need_help_options {
+	display: flex;
+	justify-content: center;
+	margin-top: 44px;
+}
+.need-help__block {
+	margin-left: 20px;
+&:first-child {margin-left: 0;}
+}
+.need-help__block h2 {
+	padding-top: 20px;
+}
+.need-help__block p {
+	padding-top: 20px;
+}
+.need_help_button {
+	font-family: $open;
+	font-weight: 600;
+	font-size: 18px;
+	color: #ffffff;
+	background-color: #E42339;
+	padding: 14px 45px 12px 46px;
+}
+.button_number {
+	margin-top: 15px;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	@@include('./components/pagehead.html')
+</head>
+<body onclick="o2.header.unsetActiveMenuItem();">
+	@@include('./components/header.html')
+	<section class="breadcrumbs-wrapper">
+		@@include('./components/breadcrumbs.html', {"color": "grey", "text":"ОРГАНИЗАЦИЯМ", "img":""})<!-- green dark grey -->
+	</section>
+	<section class="organisations-wrapper">
+		<div class="container">
+			<div class="tabs-content__item organisations">
+				<div class="tabs-content__item-text-block">
+					<div class="tabs-content__item-undertitle">Приглашаем региональные торговые и строительные организации для взаимовыгодного сотрудничества!</div>
+					<div class="h3-style tabs-content__item-title">Нас выбирают, потому что:</div>
+					<ul class="order-list">
+						<li>
+							<span class="order-list__info">Официальные дилеры крупнейших производителей.</span>
+						</li>
+						<li>
+							<span class="order-list__info">Поставщики лучших строительных материалов, чье качество проверено временем и гарантируется сертификатами.</span>
+						</li>
+						<li>
+							<span class="order-list__info">Осуществляем доставку материалов точно в срок благодаря оперативной качественной логистике.</span>
+						</li>
+						<li>
+							<span class="order-list__info">Обеспечиваем приемлемые цены на строительные материалы благодаря сотрудничеству с ведущими производителями, выгодным закупочным ценам и грамотной логистике.</span>
+						</li>
+						<li>
+							<span class="order-list__info">Постоянно поддерживаем на складах компании достаточный запас материалов для обеспечения и розничных, и крупных <br> оптовых поставок.</span>
+						</li>
+						<li>
+							<span class="order-list__info">Помогаем определиться с выбором и решаем любые нестандартные вопросы благодаря тому, что с каждым клиентом работает <br> квалифицированный личный менеджер.</span>
+						</li>
+						<li>
+							<span class="order-list__info">Имеем широкий ассортимент продукции, который насчитывает более 5000 видов материалов, необходимых для надежного <br> устройства кровельных и фасадных систем в частном и промышленном строительстве.</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="organisations-contuct-us__wrapper">
+		<div class="container">
+			<div class="h2-style organisations-contuct-us__title">
+				СВЯЖИТЕСЬ С НАМИ
+			</div>
+			<div class="organisations-contuct-us">
+				<div class="h3-style organisations-contuct-us__head">Хотите сделать оптовый заказ или договориться о снабжении <br>объектов строительными материалами?</div>
+				<div class="organisations-contuct-us__text">Свяжитесь с нами! Условия сотрудничества мы обсудим индивидуально. Предложим удобные условия и интересные оптовые цены <br>вне зависимости от размеров вашего бизнеса.</div>
+				<div class="organisations-contuct-us__contacts">
+					<a href="tel:+78412344102">+7 (8412) 34-41-02</a><br>
+					<a href="mailto:info@vashdom-pnz.ru">info@vashdom-pnz.ru</a>
+				</div>
+				<button class="btn btn-fat">Заказать звонок</button>
+			</div>
+	</section>
+		</div>
+	<div class="default-footer footer404">
+		@@include('./components/footer.html')
+	</div>
+</body>
+</html>

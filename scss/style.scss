@@ -1,0 +1,73 @@
+/* ********************** */
+@import '../node_modules/slick-carousel/slick/slick.scss';
+@import '../node_modules/slick-carousel/slick/slick-theme.scss';
+@import 'vendors/font-awesome.min.scss';
+
+/* base */
+@import 'base/variables';
+@import 'base/fonts';
+@import 'base/normalize';
+@import 'base/typography';
+@import 'base/grid';
+@import 'base/buttons';
+
+//standart-components
+@import 'standart-components/standart-components.scss';
+@import 'components/slider.scss';
+@import 'standart-components/filter.scss';
+
+/* components */
+@import 'components/header';
+@import 'components/contact-us';
+@import 'components/footer';
+@import 'components/breadcrumbs';
+@import 'components/catalog-items';
+@import 'components/popups';
+
+
+/* pages */
+@import 'catalog';
+@import 'index';
+@import 'detail';
+@import 'our-works-detail';
+@import 'main-contacts';
+@import 'services';
+@import 'about';
+@import 'organistaions';
+@import 'processing-rules';
+@import '404';
+@import 'search-results';
+
+
+*
+{
+	box-sizing: border-box;
+	outline: 0;
+}
+
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+body
+{
+	&.popup-showed
+	{
+		overflow-y: hidden;
+	}
+}
+.clearfix:after,
+.row:after
+{
+	content: " ";
+	display: table;
+	clear: both;
+}
+@media (max-width: $tablet)
+{
+
+}
+@media (max-width: $mobile)
+{
+
+}

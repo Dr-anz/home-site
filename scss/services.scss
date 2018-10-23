@@ -1,0 +1,104 @@
+.services-wrapper
+{
+	background-color: $grey;
+	padding-bottom: 5.5rem;
+}
+.services
+{
+	background-color: #fff;
+}
+.services__mobile-show-more
+{
+	display: none;
+}
+.services-tabs
+{
+	.tabs-content__item-title
+	{
+		margin-bottom: 2rem;
+	}
+}
+.services
+{
+	.tabs-content__item
+	{
+		padding-bottom: 6rem;
+	}
+}
+@media (max-width: $tablet)
+{
+	.services .tabs-nav__item
+	{
+		letter-spacing: 0.016rem;
+		margin-right: 2.4rem;
+	}
+	.services .tabs-nav__item span
+	{
+		display: none;
+	}
+	.services .tabs-content__item
+	{
+		padding-bottom: 5.6rem;
+	}
+}
+@media (max-width: $mobile)
+{
+	.services-wrapper
+	{
+		padding-top: 1rem;
+	}
+	.services__mobile-show-more
+	{
+		color: rgba(#000, 0.54);
+		font-size: 0.875rem;
+		margin-bottom: 1rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding-top: 1.5rem;
+		&:after
+		{
+			content: '';
+			background-image: url('../images/icons/bread-arrow.svg');
+			background-size: contain;
+			width: 0.9375rem;
+			height: 0.6875rem;
+			display: block;
+			transform: rotate(90deg);
+			margin-left: 0.5rem;
+			margin-top: 0.1rem;
+			transition: $ease;
+		}
+		&.active
+		{
+			padding-top: 0;
+			&:after
+			{
+				transform: rotate(270deg);
+			}
+		}
+		span
+		{
+			line-height: 1;
+			padding-bottom: 2px;
+			border-bottom: 0.065rem dashed rgba(#000, 0.54);
+		}
+	}
+	.tabs-content__item-text-block
+	{
+		.btn
+		{
+			min-width: 100%;
+		}
+	}
+	.services-pwrapper
+	{
+		max-height: 19.5rem;
+		overflow-y: hidden;
+		transition: all 0.5s;
+		&.active
+		{
+			max-height: 200rem;
+		}
+	}
+}

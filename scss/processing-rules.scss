@@ -1,0 +1,37 @@
+.processing-rules-wr
+{
+	background-color: $grey;
+	padding-bottom: 5rem;
+}
+.processing-rules__content
+{
+	background-color: #fff;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+	padding-left: 3rem;
+	box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.04);
+}
+.processing-rules__content-text
+{
+	max-width: 65.5rem;
+	margin-top: 0;
+	word-wrap: break-word;
+}
+.file-link
+{
+	display: inline-flex;
+	align-items: center;
+	color: $pink;
+	font-size: 0.875rem;
+	font-weight: 600;
+	line-height: 0.938rem;
+
+}
+
+@media (max-width: $tablet)
+{
+	.processing-rules__content
+	{
+		padding: 2rem;
+	}
+}

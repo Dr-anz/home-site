@@ -1,0 +1,65 @@
+.btn
+{
+	display: flex;
+	font-family: $open;
+	font-size: 0.875rem;
+	font-weight: 700;
+	min-width: 15rem;
+	max-width: 15rem;
+	text-transform: uppercase;
+	border: none;
+	box-shadow: none;
+	background: none;
+	transition: all 0.3s;
+	height: 3rem;
+	cursor: pointer;
+	text-decoration: none;
+	justify-content: center;
+	align-items: center;
+	vertical-align: middle;
+	width: 100%;
+}
+.btn-thing
+{
+	border: 0.0625rem solid $pink;
+	color: $pink;
+	&.btn-thing--white
+	{
+		background-color: #fff;
+	}
+	&:hover
+	{
+		background-color: $pink;
+		color: #fff;
+	}
+}
+.btn-fat
+{
+	color: #fff;
+	background-color: $pink;
+	&:hover
+	{
+		background-color: $red;
+	}
+}
+.btn-skin
+{
+	border: 0.125rem solid #fff;
+	&:hover
+	{
+		color: $pink;
+		background-color: #fff;
+	}
+}
+.btn-white
+{
+	background-color: #fff;
+	color: $pink;
+}
+@media (max-width: $mobile)
+{
+	.btn
+	{
+		min-width: 13.75rem;
+	}
+}

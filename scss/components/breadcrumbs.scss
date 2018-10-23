@@ -1,0 +1,277 @@
+.breadcrumbs-nav-slider
+{
+	display: none;
+	font-size: 0.875;
+	color: rgba(0,0,0,0.54);
+	line-height: 1.5rem;
+	a
+	{
+		color: rgba(0,0,0,0.54);
+	}
+}
+.breadcrumbs-nav__item
+{
+	// margin: 0 .7rem;
+	display: flex;
+	align-items: center;
+	font-size: 0.875rem;
+	b
+	{
+		color: #000;
+		font-size: 1rem;
+		font-weight: 600;
+	}
+	&:nth-child(3)
+	{
+		&:after
+		{
+			content: '';
+			background-image: url('../images/icons/bread-arrow.svg');
+			background-size: contain;
+			width: 0.9375rem;
+			height: 0.6875rem;
+			display: block;
+			margin-left: 1rem;
+			margin-top: 0.1rem;
+		}
+	}
+	&:nth-child(2)
+	{
+		margin-left: 1.6rem;
+		margin-right: 1.5rem;
+	}
+	&:nth-child(1)
+	{
+		&:before
+		{
+			content: '';
+			background-image: url('../images/icons/bread-arrow.svg');
+			background-size: contain;
+			width: 0.9375rem;
+			height: 0.6875rem;
+			display: block;
+			transform: rotate(180deg);
+			margin-right: 1.5rem;
+			margin-top: 0.1rem;
+		}
+	}
+	&:last-child
+	{
+		margin-right: 0;
+	}
+}
+.breadcrumbs
+{
+	padding-top: 2rem;
+	padding-bottom: 1.3rem;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+	.container
+	{
+		position: relative;
+		height: 100%;
+		display: flex;
+		align-items: center;
+	}
+	&.notitle
+	{
+		padding-bottom: 1.3rem;
+		.breadcrumbs-title
+		{
+			display: none;
+		}
+		.breadcrumbs-nav-slider
+		{
+			display: flex;
+			width: 35%;
+			justify-content: flex-end;
+		}
+		.breadcrumbs-nav
+		{
+			margin-bottom: 0;
+			width: 65%;
+		}
+	}
+	&.grey
+	{
+		background-color: $grey;
+		padding-bottom: 2rem;
+		&.notitle
+		{
+			padding-bottom: 1.3rem;
+		}
+	}
+	&.search
+	{
+		padding-bottom: 4.5rem;
+		.search-result
+		{
+			position: absolute;
+			bottom: -2rem;
+		}
+	}
+	&.green
+	{
+		padding-bottom: 2.1rem;
+		.breadcrumbs__green-img
+		{
+			bottom: -2.1rem;
+		}
+	}
+	&.green,
+	&.dark
+	{
+		background-image: linear-gradient(-46deg, #48B46C 0%, #196850 100%);
+		position: relative;
+		&:before
+		{
+			position: absolute;
+			content: '';
+			width: 100%;
+			height: 100%;
+			background-image: url('../images/icons/breadcrumbs-mask.png');
+		}
+		.breadcrumbs-nav li:after
+		{
+			background-color: rgba(#fff, 0.54);
+		}
+		.breadcrumbs-nav li a
+		{
+			color: rgba(#fff, 0.64);
+			border-bottom-color: rgba(#fff, 0.64);
+			&:hover
+			{
+				// color: #fff;
+				border-color: transparent;
+			}
+		}
+		.breadcrumbs-title
+		{
+			color: #fff;
+		}
+	}
+	&.dark
+	{
+		background-image: linear-gradient(-225deg, #313131 0%, #534D4D 100%);
+		color: #fff;
+		padding-bottom: 2.3rem;
+	}
+}
+.breadcrumbs-wrapper
+{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	position: relative;
+	z-index: 1;
+	width: 100%;
+}
+.breadcrumbs-nav
+{
+	width: 100%;
+	display: flex;
+	margin-bottom: 0.5rem;
+	li
+	{
+		position: relative;
+		margin-right: 2.625rem;
+		&:after
+		{
+			top: 0.7rem;
+			content: '';
+			width: 0.375rem;
+			height: 0.375rem;
+			background-color: rgba(0,0,0,0.34);
+			position: absolute;
+			right: -1.5rem;
+		}
+		&:last-child:after
+		{
+			display: none;
+		}
+		a
+		{
+			font-family: $open;
+			font-size: 0.875rem;
+			color: rgba(0,0,0,0.54);
+			line-height: 1.5rem;
+			border-bottom: 1px solid rgba(0,0,0,0.27);
+			transition: $ease;
+
+			&:hover
+			{
+				border-color: transparent;
+			}
+		}
+	}
+}
+.breadcrumbs-title
+{
+	text-transform: uppercase;
+	&.breadcrumbs-title--no-transform
+	{
+		text-transform: none;
+	}
+}
+.breadcrumbs__green-img
+{
+	position: absolute;
+	right: 0;
+	max-height: 9rem;
+	bottom: -1.3rem;
+	display: flex;
+	align-items: flex-end;
+	z-index: 0;
+	img
+	{
+		max-width: 100%;
+		max-height: 9rem;
+		object-fit: contain;
+		object-position: bottom center;
+	}
+}
+.breadcrumbs__dark-text
+{
+	font-size: 9rem;
+	font-family: $arimo;
+	font-weight: 700;
+	color: rgba(32, 31, 31, 0.75);
+}
+@media (max-width: $mobile)
+{
+	.breadcrumbs
+	{
+		padding-top: 1.3rem;
+	}
+	.breadcrumbs__green-img
+	{
+		right: -5.75rem;
+		bottom: -1.3rem;
+	}
+	.breadcrumbs.notitle .breadcrumbs-nav-slider
+	{
+		display: none;
+	}
+	.breadcrumbs-nav li
+	{
+		display: none;
+		&:nth-last-child(1),
+		&:nth-last-child(2)
+		{
+			display: block;
+		}
+	}
+	.breadcrumbs__dark-text
+	{
+		font-size: 4rem;
+	}
+}
+@media (max-width: 340px)
+{
+ 	.breadcrumbs-title
+ 	{
+ 		font-size: 2rem;
+ 	}
+}

@@ -1,0 +1,74 @@
+<div class="popup-overlay" onclick="o2.popups.closePopup()">
+	<div class="popup-wr popup-attach-wr" data-popup-id="1" onclick="event.stopPropagation();">
+		<div class="popup-close" onclick="o2.popups.closePopup()"></div>
+		<div class="popup-content">
+			<div class="popup__header h2-style">Узнать стоимость кровли, фасада, забора</div>
+			<form onsubmit="o2.popups.sendPopup(this, event)">
+				<div class="popup-inputs-wr">
+					<div class="input-row">
+						<input class="input _required" type="text" placeholder="Ваше имя *">
+					</div>
+					<div class="input-row">
+						<input class="input _required _phone-mask" type="phone" placeholder="Телефон *">
+					</div>
+					<div class="input-row">
+						<input class="input" type="email" placeholder="Электронная почта">
+					</div>
+				</div>
+				<div class="popup-actions-wr">
+					<div class="popup-actions__btn-row">
+						<label class="btn btn-thing btn--select-file">
+							<span class="file-icon">
+								<svg id="SVGDoc" width="16" height="18" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:avocode="https://avocode.com/" viewBox="0 0 16 18"><defs><path d="M670.31868,775.40551c-2.10989,2.12599 -5.62637,2.12599 -7.73626,0c-2.10989,-2.12598 -2.10989,-5.66929 0,-7.79527l7.38461,-7.44095c1.54726,-1.55905 4.07912,-1.55905 5.62638,0c1.54725,1.55906 1.54725,4.11024 0,5.66929l-5.97803,6.02362c-0.98461,0.99213 -2.53186,0.99213 -3.51648,0c-0.98461,-0.99212 -0.98461,-2.55118 0,-3.5433l5.27473,-5.31496l1.05494,1.06299l-5.27472,5.31496c-0.42198,0.4252 -0.42198,0.99213 0,1.41732c0.42197,0.4252 0.98461,0.4252 1.40659,0l5.97802,-6.02362c0.98462,-0.99213 0.98462,-2.55118 0,-3.54331c-0.98461,-0.99212 -2.53187,-0.99212 -3.51648,0l-7.38462,7.44095c-1.54725,1.55905 -1.54725,4.11023 0,5.66929c1.54726,1.55905 4.07912,1.55905 5.62638,0l6.68131,-6.73228l1.05495,1.06299z" id="Path-0"/></defs><desc>Generated with Avocode.</desc><g transform="matrix(1,0,0,1,-661,-759)"><g><title>Shape Copy</title><use xlink:href="#Path-0" fill="#e42339" fill-opacity="1"/></g></g></svg>
+							</span>
+							<span>ПРИКРЕПИТЬ ПРОЕКТ</span>
+							<input class="file-input" type="file" onchange="o2.forms.loadFile(this, event)">
+						</label>
+						<div class="popup-action-descr loaded-file-name-wr">
+							<div class="loaded-file-name"></div>
+						</div>
+					</div>
+					<div class="popup-actions__btn-row">
+						<button class="btn btn-fat">ОТПРАВИТЬ</button>
+						<div class="popup-action-descr popup-action-descr-policy">
+							Нажимая на кнопку, вы даете <a href="#">согласие</a> <br>
+							на обработку персональных данных и <br>
+							принимаете политику конфиденциальности
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="popup-wr popup-succes-wr" data-popup-id="2" onclick="event.stopPropagation();">
+		<div class="popup-close" onclick="o2.popups.closePopup()"></div>
+		<div class="popup-content">
+			<div class="popup__succes-header h2-style">Спасибо!</div>
+			<div class="popup-succes-text">
+				Ваше сообщение отправлено. <br>
+				Обычно мы перезваниваем в течение 10-30 минут <span>в рабочее время:</span>
+			</div>
+			<div class="popup-wourk-hours">
+				<div class="graph-work__table">
+					<div class="graph-work__table-row">
+						<div class="graph-work__table-cell graph-work__table-cell-days">Пн-Пт</div>
+						<div class="graph-work__table-cell graph-work__table-cell-deliter"></div>
+						<div class="graph-work__table-cell graph-work__table-cell-work-time">9:00 - 18:00</div>
+					</div>
+					<div class="graph-work__table-row">
+						<div class="graph-work__table-cell graph-work__table-cell-days">Сб-Вс</div>
+						<div class="graph-work__table-cell graph-work__table-cell-deliter"></div>
+						<div class="graph-work__table-cell graph-work__table-cell-work-time">10:00 - 14:00</div>
+					</div>
+				</div>
+			</div>
+			<div class="popup-success-actions-wr">
+				<div class="btn btn-fat">Продолжить</div>
+			</div>
+		</div>
+	</div>
+	<div class="popup-wr popup-litebox-wr" data-popup-id="3" onclick="event.stopPropagation();">
+		<div class="popup-close" onclick="o2.popups.closePopup()"></div>
+		<img src="" alt="">
+	</div>
+</div>

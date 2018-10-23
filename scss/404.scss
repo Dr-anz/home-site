@@ -1,0 +1,37 @@
+.error-page-wr
+{
+	background-color: $grey;
+	padding-top: 3rem;
+	padding-bottom: 5.5rem;
+}
+.error-content
+{
+	background-color: #fff;
+	padding: 3rem;
+}
+.error-content__actions
+{
+	padding-top: 2rem;
+	.btn-fat
+	{
+		min-width: 17.2rem;
+	}
+}
+.footer404
+{
+	padding-top: 0.3rem;
+}
+@media (max-width: $mobile)
+{
+	.error-content
+	{
+		padding: 1.5rem;
+	}
+	.error-content__actions
+	{
+		.btn-fat
+		{
+			max-width: 100%;
+		}
+	}
+}

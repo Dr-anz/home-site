@@ -1,0 +1,168 @@
+.default-footer
+{
+	padding-top: 5.5rem;
+}
+.footer-top
+{
+	display: flex;
+	padding-top: 6.238rem;
+	padding-bottom: 5.2625rem;
+}
+.footer-content
+{
+	display: flex;
+	flex: 1;
+	justify-content: space-between;
+	padding-left: 1.5rem;
+}
+.footer-logo
+{
+	width: 12.5rem;
+	padding-left: 1.3rem;
+	img
+	{
+		width: 100%;
+		height: 100%;
+		max-width: 8.3875rem;
+		max-height: 5.05rem;
+		object-fit: contain;
+	}
+}
+.footer-nav-wr
+{
+	display: flex;
+}
+.footer-nav:not(:first-child)
+{
+	padding-left: 5.525rem;
+}
+.footer-nav__list
+{
+	color: $black;
+	li
+	{
+		padding-bottom: 1.488rem;
+	}
+	a
+	{
+		padding-bottom: 0.125rem;
+		border-bottom: 0.0625rem solid transparent;
+		transition: $ease;
+		&:hover
+		{
+			color: $pink;
+		}
+	}
+}
+.footer-contacts
+{
+	flex-basis: 38.7%;
+}
+.footer-contacts__links
+{
+	a
+	{
+		line-height: 1.625rem;
+		transition: border-color 0.3s;
+		border-bottom: 0.065rem solid transparent;
+		&:hover
+		{
+			border-color: $black;
+		}
+	}
+}
+.footer-contacts__addresses
+{
+	padding-top: 1.6rem;
+	padding-bottom: 0.125rem;
+}
+.addresses-list
+{
+	li
+	{
+		margin-bottom: 0;
+	}
+}
+.copyright-wr
+{
+	display: flex;
+	justify-content: space-between;
+	border-top: 0.065rem solid #d8d8d8;
+	padding-top: 1.6rem;
+	padding-left: 1.7rem;
+	padding-right: 1rem;
+	padding-right: 3.2rem;
+	padding-bottom: 2.1rem;
+}
+
+@media (max-width: $tablet)
+{
+
+	.footer-content
+	{
+		padding-left: 2rem;
+	}
+	.footer-nav:not(:first-child)
+	{
+		padding-left: 2.875rem;
+	}
+	.footer-contacts
+	{
+		flex-basis: 42%;
+	}
+	.footer-top
+	{
+		padding-bottom: 5.6625rem;
+	}
+	.footer-nav__list li
+	{
+		padding-bottom: 1.388em;
+	}
+}
+
+@media (max-width: $mobile)
+{
+	.footer-top
+	{
+		flex-direction: column;
+		padding-top: 5rem;
+		padding-bottom: 2.875rem;
+	}
+	.footer-logo
+	{
+		padding-bottom: 1.925rem;
+	}
+	.footer-content
+	{
+		padding-left: 0;
+		flex-direction: column;
+	}
+	.footer-nav-wr
+	{
+		flex-direction: column;
+		padding-left: 2rem;
+	}
+	.footer-nav:not(:first-child)
+	{
+		padding-left: 0;
+	}
+	.footer-nav__list li
+	{
+		padding-bottom: 1.388rem;
+	}
+	.footer-contacts
+	{
+		display: none;
+	}
+	.copyright-wr
+	{
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		padding: 3rem 0;
+	}
+	.copyright-left
+	{
+		padding-bottom: 0.5625rem;
+	}
+}

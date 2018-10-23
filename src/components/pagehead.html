@@ -1,0 +1,52 @@
+<!--[if IE 6]>		<html id="section-reco_main" class="nojs ie6 ieb7 ieb8 ieb9 ieb10 split1 nosplit5 platform-PC platform-notouch"><![endif]-->
+<!--[if IE 7]>		<html id="section-reco_main" class="nojs iea6 ie7 ieb8 ieb9 ieb10 split1 nosplit5 platform-PC platform-notouch"><![endif]-->
+<!--[if IE 8]>		<html id="section-reco_main" class="nojs iea6 iea7 ie8 ieb9 ieb10 split1 nosplit5 platform-PC platform-notouch"><![endif]-->
+<!--[if IE 9]>		<html id="section-reco_main" class="nojs iea6 iea7 iea8 ie9 ieb10 split1 nosplit5 platform-PC platform-notouch"><![endif]-->
+<meta name="viewport" content="width=device-width">
+<meta name="MobileOptimized" content="320"/>
+<meta name="HandheldFriendly" content="true"/>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<script>
+	console.log('asdf')
+	var html = document.documentElement;
+	var currentWidth = html.clientWidth;
+	var desktopPoint = 1344;
+	var tabletPoint = 1024;
+	var mobilePoint = 560;
+	var newSize = 16;
+	if(currentWidth != desktopPoint)
+	{
+		if(currentWidth <= desktopPoint && currentWidth > tabletPoint)
+		{
+			newSize = (currentWidth / desktopPoint) * 16
+			if(newSize == 0)
+				newSize = 16;
+		}
+		else if(currentWidth <= tabletPoint && currentWidth > mobilePoint)
+		{
+			newSize = (currentWidth / tabletPoint)	* 16;
+			if(newSize == 0)
+				newSize = 16;
+		}
+		else if(currentWidth <= mobilePoint)
+		{
+			newSize = 16;
+		}
+		html.style.fontSize = newSize + 'px'
+	}
+</script>
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<script type="text/javascript" src="js/main.min.js" async=""></script>
+<!--[if lt IE 9]>
+<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script>
+<![endif]-->
+<!--[if lt IE 9]>
+<script type="text/javascript" src="js/libs/flexibility.min.js"></script>
+<![endif]-->
+<!--[if lt IE 9]>
+<script type="text/javascript" src="js/libs/flexie.js"></script>
+<![endif]-->
+<title>index</title>

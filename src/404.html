@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	@@include('./components/pagehead.html')
+</head>
+<body onclick="o2.header.unsetActiveMenuItem();">
+	@@include('./components/header.html')
+	<div class="breadcrumbs-wrapper">
+		<div class="breadcrumbs dark">
+			<div class="container">
+				<div class="breadcrumbs-wrapper">
+					<ul class="breadcrumbs-nav">
+						<li>
+							Ошибка: 404
+						</li>
+					</ul>
+					<div class="breadcrumbs-nav-slider">
+						<a href="#" class="breadcrumbs-nav__item">Предыдущий</a>
+						<div class="breadcrumbs-nav__item"><b>2 </b> / 7</div>
+						<a href="#" class="breadcrumbs-nav__item">Следующий</a>
+					</div>
+					<h1 class="h1-style breadcrumbs-title breadcrumbs-title--no-transform">Страница не найдена</h1>
+				</div>
+				<div class="breadcrumbs__dark-text">
+					404
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="error-page-wr">
+		<div class="container">
+			<div class="error-content">
+				<div class="error-content__text">
+					К сожалению, этой страницы не существует. <br>
+					Пожалуйста, проверьте ваш URL или продолжите с главной страницы.
+				</div>
+				<div class="error-content__actions">
+					<a href="" class="btn btn-fat">ПЕРЕЙТИ НА ГЛАВНУЮ</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="default-footer footer404">
+		@@include('./components/footer.html')
+	</div>
+</body>
+</html>

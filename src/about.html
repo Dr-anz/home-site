@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	@@include('./components/pagehead.html')
+</head>
+<body onclick="o2.header.unsetActiveMenuItem();">
+	@@include('./components/header.html')
+	<section class="breadcrumbs-wrapper">
+		@@include('./components/breadcrumbs.html', {"color": "grey", "text":"О КОМПАНИИ", "img":""})<!-- green dark grey -->
+	</section>
+	<section class="about-grey">
+		<div class="container">
+			<div class="about-text">
+				Компания «Ваш дом» — один из крупнейших дистрибьюторов кровельных и фасадных материалов в регионе и активный участник российского рынка строительных материалов в Пензенской области с более чем 10-летней историей деятельности. За это время мы выросли из небольшой фирмы с минимальным ассортиментом товара в крупного комплексного поставщика. «Ваш дом» зарекомендовал себя как надежный, добросовестный и стабильный партнер. Именно поэтому клиенты компании становятся не только нашими постоянными заказчиками, но и хорошими друзьями.
+			</div>
+			<div class="about-advantages">
+				<div class="about-advantages__items about-slider">
+					<div class="about-advantages__item">
+						<div class="h2-style about-advantages__item-title">35000</div>
+						<div class="about-advantages__item-text">наименований продукции <br>и даже больше</div>
+					</div>
+					<div class="about-advantages__item">
+						<div class="h2-style about-advantages__item-title">22000</div>
+						<div class="about-advantages__item-text">кв.м. складских <br>площадей</div>
+					</div>
+					<div class="about-advantages__item">
+						<div class="h2-style about-advantages__item-title">24</div>
+						<div class="about-advantages__item-text">торговые марки строительных материалов</div>
+					</div>
+					<div class="about-advantages__item">
+						<div class="h2-style about-advantages__item-title">1</div>
+						<div class="about-advantages__item-text">собственная марка <br>«Ваш дом»</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="advantages-about">
+		<div class="container">
+			<div class="h2-style advantages-about__title">НАШИ ПРЕИМУЩЕСТВА</div>
+			<div class="advantages-about__items about-slider">
+				<div class="advantages-about__item">
+					<div class="advantages-about__item-img">
+						<img src="images/advantages1.svg" alt="">
+					</div>
+					<div class="h3-style advantages-about__item-title">Экономия денег</div>
+					<ul class="red-markered-list advantages-about__item-list">
+						<li>Прямые контракты с ведущими производителями, выгодные закупочные цены и грамотная логистика позволяют нам гарантировать высокое качество и низкие цены на весь ассортимент продукции</li>
+						<li>Строительные материалы нашего собственного производства — по эксклюзивным ценам</li>
+					</ul>
+				</div>
+				<div class="advantages-about__item">
+					<div class="advantages-about__item-img">
+						<img src="images/advantages2.svg" alt="">
+					</div>
+					<div class="h3-style advantages-about__item-title">Экономия нервов</div>
+					<ul class="red-markered-list advantages-about__item-list">
+						<li>С каждым клиентом работает личный менеджер, который поможет определиться с выбором и решит любые нестандартные вопросы</li>
+						<li>Опытные специалисты кровельных и фасадных систем произведут расчет материалов «под ключ», не допуская ошибок и неточностей</li>
+						<li>Вся предлагаемая нами продукция сертифицирована, проверена временем и успешно эксплуатируется в России </li>
+						<li>На большинство материалов — гарантия производителя </li>
+					</ul>
+				</div>
+				<div class="advantages-about__item">
+					<div class="advantages-about__item-img">
+						<img src="images/advantages3.svg" alt="">
+					</div>
+					<div class="h3-style advantages-about__item-title">Экономия времени</div>
+					<ul class="red-markered-list advantages-about__item-list">
+						<li>Все нужное вы можете купить в одном месте благодаря ассортименту из более чем 35 000 позиций </li>
+						<li>Мы постоянно поддерживаем достаточный запас материалов на складах для обеспечения и розничных, и оптовых поставок</li>
+						<li>До нас всегда можно быстро добраться: выбирайте любой из наших трех магазинов в г. Пензе</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="reviews">
+		<div class="container">
+			<div class="h2-style reviews__title">ОТЗЫВЫ О НАС</div>
+			<div class="default-slider reviews-slider">
+				<div class="default-slider-item reviews-slider__item _litebox" onclick="o2.litebox.showLitebox(this);">
+					<img src="images/catalog-2.png" alt="">
+				</div>
+				<div class="default-slider-item reviews-slider__item _litebox" onclick="o2.litebox.showLitebox(this);">
+					<img src="images/catalog-2.png" alt="">
+				</div>
+				<div class="default-slider-item reviews-slider__item _litebox" onclick="o2.litebox.showLitebox(this);">
+					<img src="images/catalog-2.png" alt="">
+				</div>
+				<div class="default-slider-item reviews-slider__item _litebox" onclick="o2.litebox.showLitebox(this);">
+					<img src="images/catalog-2.png" alt="">
+				</div>
+				<div class="default-slider-item reviews-slider__item _litebox" onclick="o2.litebox.showLitebox(this);">
+					<img src="images/catalog-2.png" alt="">
+				</div>
+			</div>
+			<div class="h2-style reviews__title">СЕРТИФИКАТЫ И ЛИЦЕНЗИИ</div>
+			<div class="reviews-setificats about-slider">
+				<div class="reviews-setificat _litebox" onclick="o2.litebox.showLitebox(this);">
+					<img src="images/sertificat1.jpg" alt="">
+				</div>
+				<div class="reviews-setificat _litebox" onclick="o2.litebox.showLitebox(this);">
+					<img src="images/sertificat2.jpg" alt="">
+				</div>
+				<div class="reviews-setificat _litebox" onclick="o2.litebox.showLitebox(this);">
+					<img src="images/sertificat3.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="default-footer about-footer">
+		@@include('./components/contact-us.html')
+		@@include('./components/footer.html')
+	</div>
+</body>
+</html>

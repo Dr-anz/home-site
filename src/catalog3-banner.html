@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	@@include('./components/pagehead.html')
+</head>
+<body onclick="o2.header.unsetActiveMenuItem();">
+	@@include('./components/header.html')
+	<section class="breadcrumbs-wrapper">
+		@@include('./components/breadcrumbs.html', {"color": "green", "text":"МАТЕРИАЛЫ ДЛЯ КРОВЛИ", "img":"images/icons/bread1.svg"})<!-- green dark grey -->
+	</section>
+	<section class="catalog-third-lvl catalog-third-lvl_banner catalog-third-lvl_banner--pt">
+		<div class="container container_nopt">
+			<div class="catalog-third-wrapper">
+				<div class="catalog-third-lvl__sort">
+					<div class="catalog-third-lvl__sort-left">
+						<div class="catalog-third-lvl__sort-left-item active" onclick="o2.sort.setSort(this)"><span>По популярности</span></div>
+						<div class="catalog-third-lvl__sort-left-item" onclick="o2.sort.setSort(this)"><span>По названию</span></div>
+					</div>
+					<div class="catalog-third-lvl__sort-right">
+						Количество товаров: 16
+					</div>
+				</div>
+				<div class="row">
+					<div class="catalog-third-lvl__items">
+						@@include('./components/catalog3-item.html', {"img":"images/dropdown-img.jpg", "title":"Гибкая черепица<br>IKO Cambridge 30 & 50 AR"})
+						@@include('./components/catalog3-item.html', {"img":"images/catalog-2.png", "title":"Гибкая черепица<br>IKO Cambridge 30 & 50 AR"})
+						@@include('./components/catalog3-item.html', {"img":"images/catalog-3.png", "title":"Гибкая черепица<br>IKO Cambridge 30 & 50 AR"})
+						@@include('./components/catalog3-item.html', {"img":"images/catalog-4.png", "title":"Гибкая черепица<br>IKO Cambridge 30 & 50 AR"})
+						@@include('./components/catalog3-item.html', {"img":"images/catalog-5.png", "title":"Гибкая черепица<br>IKO Cambridge 30 & 50 AR"})
+						@@include('./components/catalog3-item.html', {"img":"images/catalog-2.png", "title":"Гибкая черепица<br>IKO Cambridge 30 & 50 AR"})
+					</div>
+				</div>
+			</div>
+			<div class="catalog-third-lvl__slider-wrapper">
+				<div class="catalog-third-lvl__slider-title">
+					МАТЕРИАЛЫ ДЛЯ МОНТАЖА
+				</div>
+				<div class="catalog-third-lvl__slider-items">
+					<a href="/detail.html" class="catalog-third-lvl__slider-item" style="background-image: url('images/catalog-2.png');">
+						Планки для гибкой черепицы
+					</a>
+					<a href="/detail.html" class="catalog-third-lvl__slider-item" style="background-image: url('images/catalog-3.png');">
+						Планки для гибкой черепицы
+					</a>
+					<a href="/detail.html" class="catalog-third-lvl__slider-item" style="background-image: url('images/catalog-4.png');">
+						Планки для гибкой черепицы
+					</a>
+					<a href="/detail.html" class="catalog-third-lvl__slider-item" style="background-image: url('images/catalog-5.png');">
+						Планки для гибкой черепицы
+					</a>
+					<a href="/detail.html" class="catalog-third-lvl__slider-item" style="background-image: url('images/catalog-2.png');">
+						Планки для гибкой черепицы
+					</a>
+					<a href="/detail.html" class="catalog-third-lvl__slider-item" style="background-image: url('images/catalog-4.png');">
+						Планки для гибкой черепицы
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="catalog-banner">
+		<div class="catalog-banner__wrapper">
+			<div class="container">
+				<a class="catalog-banner__img" href="#">
+					<img src="images/catalog-banner.jpg" alt="">
+				</a>
+			</div>
+		</div>
+	</section>
+	<section class="catalog-third-lvl catalog-third-lvl__mobile-nopt">
+		<div class="container">
+			<div class="catalog-third-wrapper">
+				<div class="row">
+					<div class="catalog-third-lvl__items">
+						@@include('./components/catalog3-item.html', {"img":"images/dropdown-img.jpg", "title":"Гибкая черепица<br>IKO Cambridge 30 & 50 AR"})
+						@@include('./components/catalog3-item.html', {"img":"images/catalog-2.png", "title":"Гибкая черепица<br>IKO Cambridge 30 & 50 AR"})
+						@@include('./components/catalog3-item.html', {"img":"images/catalog-3.png", "title":"Гибкая черепица<br>IKO Cambridge 30 & 50 AR"})
+						@@include('./components/catalog3-item.html', {"img":"images/catalog-4.png", "title":"Гибкая черепица<br>IKO Cambridge 30 & 50 AR"})
+						@@include('./components/catalog3-item.html', {"img":"images/catalog-5.png", "title":"Гибкая черепица<br>IKO Cambridge 30 & 50 AR"})
+						@@include('./components/catalog3-item.html', {"img":"images/catalog-2.png", "title":"Гибкая черепица<br>IKO Cambridge 30 & 50 AR"})
+						@@include('./components/catalog3-item.html', {"img":"images/catalog-3.png", "title":"Гибкая черепица<br>IKO Cambridge 30 & 50 AR"})
+						@@include('./components/catalog3-item.html', {"img":"images/catalog-4.png", "title":"Гибкая черепица<br>IKO Cambridge 30 & 50 AR"})
+					</div>
+					<div class="catalog__show-more">
+						<button class="btn">Показать больше</button>
+					</div>
+				</div>
+			</div>
+			<div class="catalog-third-lvl__slider-wrapper catalog-third-lvl__slider-wrapper__mobile">
+				<div class="catalog-third-lvl__slider-title">
+					МАТЕРИАЛЫ ДЛЯ МОНТАЖА
+				</div>
+				<div class="catalog-third-lvl__slider-items">
+					<a href="#" class="catalog-third-lvl__slider-item" style="background-image: url('images/catalog-2.png');">
+						Планки для гибкой черепицы
+					</a>
+					<a href="#" class="catalog-third-lvl__slider-item" style="background-image: url('images/catalog-3.png');">
+						Планки для гибкой черепицы
+					</a>
+					<a href="#" class="catalog-third-lvl__slider-item" style="background-image: url('images/catalog-4.png');">
+						Планки для гибкой черепицы
+					</a>
+					<a href="#" class="catalog-third-lvl__slider-item" style="background-image: url('images/catalog-5.png');">
+						Планки для гибкой черепицы
+					</a>
+					<a href="#" class="catalog-third-lvl__slider-item" style="background-image: url('images/catalog-2.png');">
+						Планки для гибкой черепицы
+					</a>
+					<a href="#" class="catalog-third-lvl__slider-item" style="background-image: url('images/catalog-4.png');">
+						Планки для гибкой черепицы
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="catalog-third-lvl__info catalog-third-lvl__info_nopt-mobile">
+		<div class="container">
+			<div class="catalog-third-lvl__info-wrapper">
+				<div class="h2-style catalog-third-lvl__info-title">Преимущества гибкой черепицы</div>
+				<p>Основная задача планок — придание кровле завершенного внешнего вида и защита от негативных воздействий окружающей среды (дождя, снега, ветра и т.д.). Комплектующие устанавливаются в месте стыка скатов крыши, а также в местах примыкания к стене.</p>
+				<ul class="order-list">
+					<li>
+						<span class="h4-style order-list__title">Карнизная планка отводит конденсат</span>
+						<span class="order-list__info">Основная задача планок – придание кровле завершенного внешнего вида и защита от негативных воздействий окружающей среды (дождя, снега, ветра и т.д.). Комплектующие устанавливаются в месте стыка скатов крыши, а также в местах примыкания к стене.</span>
+					</li>
+					<li>
+						<span class="h4-style order-list__title">Бесшумная</span>
+						<span class="order-list__info">Если вы планируете сделать на мансардном этаже дополнительную комнату. Дождь, град или ураган — ничто не помешает вам выспаться в спальне под самой крышей, покрытой бесшумной черепицей. </span>
+					</li>
+					<li>
+						<span class="h4-style order-list__title">Легкая</span>
+						<span class="order-list__info">(8-12 кг. на м2) просто монтировать и ухаживать за ней, перемещаясь по крыше без всякого урона для материала.</span>
+					</li>
+				</ul>
+				<div class="h2-style catalog-third-lvl__info-title">Не забудьте учесть!</div>
+				<p>Минимальная температура монтажа черепицы, рекомендованная всеми производителями, -5°С. Многолетний опыт монтажа черепицы показывает, что Tegola и IKO более применимы для монтажа в жаркое знойное лето, а при установке в минус лучше себя зарекомендовали более пластичные Katepal, RUFLEX, Icopal.</p>
+			</div>
+			<div class="catalog-third-lvl__info-right">
+				<div class="h3-style catalog-third-lvl__info-right-title">Кровля под ключ от подбора до монтажа!</div>
+				<ul class="red-markered-list catalog-third-lvl__info-right-list">
+					<li><a href="/services.html#tab1">Замерим <br> и составим смету</a></li>
+					<li><a href="/services.html#tab4">Доставим по звонку</a></li>
+					<li><a href="/services.html#tab3">Выполним монтаж</a></li>
+					<li><a href="/services.html#tab0">Поможем подобрать материалы</a></li>
+				</ul>
+				<a href="tel:+78412344102" class="h3-style catalog-third-lvl__info-right-phone">+7 (8412) 34-41-02</a>
+				<button class="btn btn-fat">заказать звонок</button>
+			</div>
+		</div>
+	</section>
+	<section class="same-slider">
+		<div class="container">
+			<div class="h2-style same-slider__title">Что еще покупают с гибкой черепицей? </div>
+			<div class="same-slider-container">
+				<div class="default-slider-item">
+					@@include('./components/catalog2-item.html',{"descr":"", "title":"Металлочерепица", "img":"images/dropdown-img.jpg"})
+				</div>
+				<div class="default-slider-item">
+					@@include('./components/catalog2-item.html',{"descr":"", "title":"Мансардные окна", "img":"images/catalog-2.png"})
+				</div>
+				<div class="default-slider-item">
+					@@include('./components/catalog2-item.html',{"descr":"", "title":"Гидроизоляция", "img":"images/catalog-3.png"})
+				</div>
+				<div class="default-slider-item">
+					@@include('./components/catalog2-item.html',{"descr":"", "title":"Утеплители", "img":"images/catalog-4.png"})
+				</div>
+				<div class="default-slider-item">
+					@@include('./components/catalog2-item.html',{"descr":"", "title":"Водосточная система", "img":"images/catalog-5.png"})
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="default-footer">
+		@@include('./components/contact-us.html')
+		@@include('./components/footer.html')
+	</div>
+</body>
+</html>

@@ -1,0 +1,203 @@
+
+.contact-us__header
+{
+	text-align: center;
+}
+.contact-us-row
+{
+	display: flex;
+	justify-content: space-between;
+	padding-top: 2.5rem;
+}
+.contact-us-row__item
+{
+	background-color: $grey;
+	padding-left: 2rem;
+	padding-top: 1.938rem;
+	padding-bottom: 2.25rem;
+	padding-right: 2.375rem;
+}
+.contact-us-item__estimate
+{
+	flex-basis: 49%;
+}
+.estimate__header
+{
+	color: $black;
+	font-family: $arimo;
+	font-size: 1.5rem;
+	font-weight: 700;
+	line-height: 1.875rem;
+}
+.estimate__descr
+{
+	color: $black;
+	line-height: 1.625rem;
+	padding: 2.1rem 0;
+}
+.estimate__descr--on-tablet
+{
+	display: none;
+}
+.contact-us-item__get-consultation
+{
+	margin-right: 1.5rem;
+	margin-left: 1.5rem;
+}
+.contact-us-item__graph-work
+{
+	flex-basis: 23.7%;
+}
+.consultation__header
+{
+	color: $black;
+	font-family: $arimo;
+	font-size: 1.5rem;
+	font-weight: 700;
+	line-height: 1.875rem;
+}
+.consultation__phone
+{
+	padding: 17px 0;
+	a
+	{
+		color: $black;
+		font-weight: 600;
+		line-height: 1.625rem;
+		&:hover
+		{
+			text-decoration: underline;
+		}
+	}
+}
+.graph-work__header
+{
+	color: $black;
+	font-family: $arimo;
+	font-size: 1.5rem;
+	font-weight: 700;
+	line-height: 1.875rem;
+}
+.graph-work__decr
+{
+	color: $black;
+	line-height: 1.625rem;
+	padding-top: 2.125rem;
+	padding-bottom: 11px;
+}
+.graph-work__table-row
+{
+	display: flex;
+	&:first-child
+	{
+		padding-bottom: 0.2rem;
+	}
+}
+.graph-work__table-cell-days
+{
+	min-width: 4.375rem;
+	color: #8e9390;
+}
+.graph-work__table-cell-deliter
+{
+	width: 3.438rem;
+	height: 1.25rem;
+	border-bottom: 0.0625rem dashed #979797;
+}
+.graph-work__table-cell-work-time
+{
+	color: $black;
+	font-weight: 600;
+	min-width: 6.125rem;
+	text-align: right;
+}
+.graph-work__show-map
+{
+	padding-top: 1.013rem;
+}
+.show-map__link
+{
+	position: relative;
+	color: $pink;
+	font-size: 0.875rem;
+	font-weight: 600;
+	padding-left: 1.75rem;
+	position: relative;
+	&:hover
+	{
+		&:before
+		{
+			transform: translateY(-2px);
+		}
+	}
+	&:before
+	{
+		position: absolute;
+		content: '';
+		width: 0.875rem;
+		height: 1.25rem;
+		left: 0;
+		top: 50%;
+		margin-top: -0.625rem;
+		background-image: url('../images/icons/map-marker-icon.svg');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+		transition: transform 0.3s;
+	}
+}
+
+@media (max-width: $tablet)
+{
+	.contact-us-section
+	{
+		.contact-us-row__item
+		{
+			flex-basis: 32%;
+			padding-left: 2rem;
+		}
+		.contact-us-item__estimate
+		{
+			padding-right: 0.25rem;
+		}
+		.estimate__descr--no-tablet
+		{
+			display: none;
+		}
+		.estimate__descr--on-tablet,
+		.consultation__phone
+		{
+			display: block;
+			padding-top: 1.063rem;
+			padding-bottom: 1rem;
+		}
+		.estimate__header
+		{
+			padding-right: 1.375rem;
+		}
+		.contact-us-item__get-consultation
+		{
+			padding-right: 1rem;
+		}
+	}
+}
+@media (max-width: $mobile)
+{
+	.contact-us-section
+	{
+		.contact-us-row
+		{
+			flex-wrap: wrap;
+		}
+		.contact-us-row__item
+		{
+			flex-basis: 100%;
+			padding-left: 1.875rem;
+			padding-right: 1.25rem;
+		}
+		.contact-us-item__get-consultation
+		{
+			margin: 1.5rem 0;
+		}
+	}
+}

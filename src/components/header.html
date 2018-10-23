@@ -1,0 +1,312 @@
+<header class="header">
+	<div class="container">
+		<a href="/" class="header-logo">
+			<img src="images/icons/Logo.svg" alt="">
+		</a>
+		<div class="header-right">
+			<div class="header-top">
+				<div class="header-top__static-pages">
+					<a href="/services.html">Услуги</a>
+					<a href="/our-works.html">Наши работы</a>
+					<a href="/organisations.html">Организациям</a>
+					<a href="/about.html">О компании</a>
+					<a href="/contacts.html">Контакты</a>
+				</div>
+				<div class="header-top__info">
+					<div class="header-top__info__mobile-left">
+						<a class="header-top__info__address" href="/contacts.html"><span>Адреса магазинов</span></a>
+						<div class="header-top__info-city">
+							<span>г. Пенза</span>
+							<span>3 магазина в Пензе</span>
+						</div>
+					</div>
+					<a href="tel:+78412344102" class="header-top__info-num">+7 (8412) 34-41-02</a>
+				</div>
+				<a href="#" class="header-bot__item mobile-header-bot__item" onclick="o2.header.setActiveMenuItem(this, '5'); event.stopPropagation();">
+					@@include('../svg/btn_menu.html')
+					@@include('../svg/close-btn.html')
+				</a>
+			</div>
+			<div class="header-bot">
+				<a href="#" class="header-bot__item _header-bot__item" onclick="o2.header.setActiveMenuItem(this, '1'); event.stopPropagation();">
+					<span>МАТЕРИАЛЫ ДЛЯ КРОВЛИ</span><span>КРОВЛЯ</span>
+					<div class="header-bot__item-close" onclick="o2.header.unsetActiveMenuItem(); event.stopPropagation();">
+						@@include('../svg/menu-close.html')
+					</div>
+				</a>
+				<a href="#" class="header-bot__item _header-bot__item" onclick="o2.header.setActiveMenuItem(this, '2'); event.stopPropagation();">
+					<span>ДЛЯ ФАСАДОВ</span><span>ФАСАД</span>
+					<div class="header-bot__item-close" onclick="o2.header.unsetActiveMenuItem(); event.stopPropagation();">
+						@@include('../svg/menu-close.html')
+					</div>
+				</a>
+				<a href="#" class="header-bot__item _header-bot__item" onclick="o2.header.setActiveMenuItem(this, '3'); event.stopPropagation();">
+					<span>ДЛЯ ЗАБОРОВ</span><span>ЗАБОР</span>
+					<div class="header-bot__item-close" onclick="o2.header.unsetActiveMenuItem(); event.stopPropagation();">
+						@@include('../svg/menu-close.html')
+					</div>
+				</a>
+				<a href="#" class="header-bot__item _header-bot__item" onclick="o2.header.setActiveMenuItem(this, '4'); event.stopPropagation();">
+					<span>ПРОЧИЕ МАТЕРИАЛЫ</span><span>ПРОЧЕЕ</span>
+					<div class="header-bot__item-close" onclick="o2.header.unsetActiveMenuItem(); event.stopPropagation();">
+						@@include('../svg/menu-close.html')
+					</div>
+				</a>
+				<a href="#" class="header-bot__item header-bot__item-search" onclick="o2.search(); event.stopPropagation();">
+					@@include('../svg/search.html')
+					@@include('../svg/close-btn.html')
+					<div class="search-form" onclick="event.stopPropagation();">
+						<input type="text" placeholder="ВВЕДИТЕ ЗАПРОС">
+						<button class="search-btn">Искать в каталоге</button>
+					</div>
+				</a>
+				<a href="#" class="header-bot__item" onclick="o2.header.setActiveMenuItem(this, '5'); event.stopPropagation();">
+					@@include('../svg/btn_menu.html')
+					@@include('../svg/close-btn.html')
+				</a>
+
+			</div>
+		</div>
+	</div>
+</header>
+<div class="header__dropdown-menu header__dropdown-menu__menu" id="drop1" onclick="event.stopPropagation();">
+	<div class="header__dropdown-menu__mobile-full-text">
+		МАТЕРИАЛЫ ДЛЯ КРОВЛИ
+	</div>
+	<div class="header__dropdown-menu-left">
+		<div class="header__dropdown-menu-left-item">
+			<a href="/catalog2.html" class="header__dropdown-menu-left-item-title">
+				Основные (11)
+			</a>
+			<ul class="header__dropdown-menu-right-list">
+				<li><a href="/catalog3.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3.html"><span>Металлочерепица</span><span>14</span></a></li>
+			</ul>
+		</div>
+		<div class="header__dropdown-menu-left-item">
+			<a href="/catalog2.html#related" class="header__dropdown-menu-left-item-title">
+				Сопутсвующие (31)
+			</a>
+			<ul class="header__dropdown-menu-right-list">
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="header__dropdown-menu-right">
+		<div class="header__dropdown-menu-right-img">
+			<img src="images/dropdown-img.jpg" alt="">
+		</div>
+		<div class="header__dropdown-menu-right-descr">
+			Металлочерепица - это такая кровля, которая объединяет в себе твердость металла и непробиваемость черепа
+		</div>
+	</div>
+</div>
+<div class="header__dropdown-menu header__dropdown-menu__menu" id="drop2" onclick="event.stopPropagation();">
+	<div class="header__dropdown-menu__mobile-full-text">
+		ДЛЯ ФАСАДОВ
+	</div>
+	<div class="header__dropdown-menu-left">
+		<div class="header__dropdown-menu-left-item">
+			<a href="/catalog2.html" class="header__dropdown-menu-left-item-title">
+				Основные (22)
+			</a>
+			<ul class="header__dropdown-menu-right-list">
+				<li><a href="/catalog3.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3.html"><span>Металлочерепица</span><span>14</span></a></li>
+			</ul>
+		</div>
+		<div class="header__dropdown-menu-left-item">
+			<a href="/catalog2.html#related" class="header__dropdown-menu-left-item-title">
+				Сопутсвующие (31)
+			</a>
+			<ul class="header__dropdown-menu-right-list">
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="header__dropdown-menu-right">
+		<div class="header__dropdown-menu-right-img">
+			<img src="images/dropdown-img.jpg" alt="">
+		</div>
+		<div class="header__dropdown-menu-right-descr">
+			Металлочерепица - это такая кровля, которая объединяет в себе твердость металла и непробиваемость черепа
+		</div>
+	</div>
+</div>
+<div class="header__dropdown-menu header__dropdown-menu__menu" id="drop3" onclick="event.stopPropagation();">
+	<div class="header__dropdown-menu__mobile-full-text">
+		ДЛЯ ЗАБОРОВ
+	</div>
+	<div class="header__dropdown-menu-left">
+		<div class="header__dropdown-menu-left-item">
+			<a href="/catalog2.html" class="header__dropdown-menu-left-item-title">
+				Основные (33)
+			</a>
+			<ul class="header__dropdown-menu-right-list">
+				<li><a href="/catalog3.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3.html"><span>Металлочерепица</span><span>14</span></a></li>
+			</ul>
+		</div>
+		<div class="header__dropdown-menu-left-item">
+			<a href="/catalog2.html#related" class="header__dropdown-menu-left-item-title">
+				Сопутсвующие (31)
+			</a>
+			<ul class="header__dropdown-menu-right-list">
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="header__dropdown-menu-right">
+		<div class="header__dropdown-menu-right-img">
+			<img src="images/dropdown-img.jpg" alt="">
+		</div>
+		<div class="header__dropdown-menu-right-descr">
+			Металлочерепица - это такая кровля, которая объединяет в себе твердость металла и непробиваемость черепа
+		</div>
+	</div>
+</div>
+<div class="header__dropdown-menu header__dropdown-menu__menu" id="drop4" onclick="event.stopPropagation();">
+	<div class="header__dropdown-menu__mobile-full-text">
+		ПРОЧИЕ МАТЕРИАЛЫ
+	</div>
+	<div class="header__dropdown-menu-left">
+		<div class="header__dropdown-menu-left-item">
+			<a href="/catalog2.html" class="header__dropdown-menu-left-item-title">
+				Основные (44)
+			</a>
+			<ul class="header__dropdown-menu-right-list">
+				<li><a href="/catalog3.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3.html"><span>Металлочерепица</span><span>14</span></a></li>
+			</ul>
+		</div>
+		<div class="header__dropdown-menu-left-item">
+			<a href="/catalog2.html#related" class="header__dropdown-menu-left-item-title">
+				Сопутсвующие (31)
+			</a>
+			<ul class="header__dropdown-menu-right-list">
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="header__dropdown-menu-right">
+		<div class="header__dropdown-menu-right-img">
+			<img src="images/dropdown-img.jpg" alt="">
+		</div>
+		<div class="header__dropdown-menu-right-descr">
+			Металлочерепица - это такая кровля, которая объединяет в себе твердость металла и непробиваемость черепа
+		</div>
+	</div>
+</div>
+<div class="header__dropdown-menu header__mobile-menu  header__dropdown-menu__menu" id="drop5" onclick="event.stopPropagation();">
+	<div class="header__mobile-menu-left">
+		<div class="header__mobile-menu-title">Услуги</div>
+		<div class="header__mobile-menu-list">
+			<a href="#">Доставка по звонку</a>
+			<a href="#">Консультации</a>
+			<a href="#">Замеры и составление сметы</a>
+			<a href="#">Производство в размер</a>
+			<a href="#">Монтаж</a>
+		</div>
+		<div class="header__mobile-menu-static-pages-list">
+			<a href="#">Наши работы</a>
+			<a href="#">Организациям</a>
+			<a href="#">О компании</a>
+			<a href="#">Контакты</a>
+		</div>
+	</div>
+	<div class="header__mobile-menu-right">
+		<div class="contact-us-row__item contact-us-item__graph-work">
+			<div class="graph-work__header">Приходите к нам!</div>
+			<div class="graph-work__decr">Все покажем и расскажем</div>
+			<div class="graph-work__table">
+				<div class="graph-work__table-row">
+					<div class="graph-work__table-cell graph-work__table-cell-days">Пн-Пт</div>
+					<div class="graph-work__table-cell graph-work__table-cell-deliter"></div>
+					<div class="graph-work__table-cell graph-work__table-cell-work-time">9:00 - 18:00</div>
+				</div>
+				<div class="graph-work__table-row">
+					<div class="graph-work__table-cell graph-work__table-cell-days">Сб-Вс</div>
+					<div class="graph-work__table-cell graph-work__table-cell-deliter"></div>
+					<div class="graph-work__table-cell graph-work__table-cell-work-time">10:00 - 14:00</div>
+				</div>
+			</div>
+			<div class="graph-work__show-map">
+				<a href="#" class="show-map__link">Магазины на карте</a>
+			</div>
+		</div>
+		<a href="tel:+78412344102" class="header-top__info-num header-top__info-num__mobile-menu">+7 (8412) 34-41-02</a>
+		<button class="btn btn-fat header__mobile-menu-right-btn">ЗАКАЗАТЬ ЗВОНОК</button>
+	</div>
+</div>

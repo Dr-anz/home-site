@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<!--[if IE 6]>		<html id="section-reco_main" class="nojs ie6 ieb7 ieb8 ieb9 ieb10 split1 nosplit5 platform-PC platform-notouch"><![endif]-->
+<!--[if IE 7]>		<html id="section-reco_main" class="nojs iea6 ie7 ieb8 ieb9 ieb10 split1 nosplit5 platform-PC platform-notouch"><![endif]-->
+<!--[if IE 8]>		<html id="section-reco_main" class="nojs iea6 iea7 ie8 ieb9 ieb10 split1 nosplit5 platform-PC platform-notouch"><![endif]-->
+<!--[if IE 9]>		<html id="section-reco_main" class="nojs iea6 iea7 iea8 ie9 ieb10 split1 nosplit5 platform-PC platform-notouch"><![endif]-->
+<meta name="viewport" content="width=device-width">
+<meta name="MobileOptimized" content="320"/>
+<meta name="HandheldFriendly" content="true"/>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<script>
+	console.log('asdf')
+	var html = document.documentElement;
+	var currentWidth = html.clientWidth;
+	var desktopPoint = 1344;
+	var tabletPoint = 1024;
+	var mobilePoint = 560;
+	var newSize = 16;
+	if(currentWidth != desktopPoint)
+	{
+		if(currentWidth <= desktopPoint && currentWidth > tabletPoint)
+		{
+			newSize = (currentWidth / desktopPoint) * 16
+			if(newSize == 0)
+				newSize = 16;
+		}
+		else if(currentWidth <= tabletPoint && currentWidth > mobilePoint)
+		{
+			newSize = (currentWidth / tabletPoint)	* 16;
+			if(newSize == 0)
+				newSize = 16;
+		}
+		else if(currentWidth <= mobilePoint)
+		{
+			newSize = 16;
+		}
+		html.style.fontSize = newSize + 'px'
+	}
+</script>
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<script type="text/javascript" src="js/main.min.js" async=""></script>
+<!--[if lt IE 9]>
+<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script>
+<![endif]-->
+<!--[if lt IE 9]>
+<script type="text/javascript" src="js/libs/flexibility.min.js"></script>
+<![endif]-->
+<!--[if lt IE 9]>
+<script type="text/javascript" src="js/libs/flexie.js"></script>
+<![endif]-->
+<title>index</title>
+</head>
+<body onclick="o2.header.unsetActiveMenuItem();">
+	<header class="header">
+	<div class="container">
+		<a href="/" class="header-logo">
+			<img src="images/icons/Logo.svg" alt="">
+		</a>
+		<div class="header-right">
+			<div class="header-top">
+				<div class="header-top__static-pages">
+					<a href="/services.html">Услуги</a>
+					<a href="/our-works.html">Наши работы</a>
+					<a href="/organisations.html">Организациям</a>
+					<a href="/about.html">О компании</a>
+					<a href="/contacts.html">Контакты</a>
+				</div>
+				<div class="header-top__info">
+					<div class="header-top__info__mobile-left">
+						<a class="header-top__info__address" href="/contacts.html"><span>Адреса магазинов</span></a>
+						<div class="header-top__info-city">
+							<span>г. Пенза</span>
+							<span>3 магазина в Пензе</span>
+						</div>
+					</div>
+					<a href="tel:+78412344102" class="header-top__info-num">+7 (8412) 34-41-02</a>
+				</div>
+				<a href="#" class="header-bot__item mobile-header-bot__item" onclick="o2.header.setActiveMenuItem(this, '5'); event.stopPropagation();">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="22" viewBox="0 0 28 22"><defs><path id="b13la" d="M929 124V70h54v54z"/><path id="b13lb" d="M941 89v-4h28v4z"/><path id="b13lc" d="M941 98v-4h28v4z"/><path id="b13ld" d="M941 107v-4h28v4z"/></defs><g><g transform="translate(-941 -85)"><g><use fill="#fff" xlink:href="#b13la"/></g><g><use fill="#46a06f" xlink:href="#b13lb"/></g><g><use fill="#46a06f" xlink:href="#b13lc"/></g><g><use fill="#46a06f" xlink:href="#b13ld"/></g></g></g></svg>
+					<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>close-btn</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Close_btn" transform="translate(-18.000000, -17.000000)" fill="#E11C32">
+            <g id="close-btn" transform="translate(18.000000, 17.000000)">
+                <rect id="Rectangle-29" transform="translate(15.000000, 15.000000) rotate(-315.000000) translate(-15.000000, -15.000000) " x="13" y="-3" width="4" height="36"></rect>
+                <rect id="Rectangle-29-Copy" transform="translate(15.000000, 15.000000) rotate(-45.000000) translate(-15.000000, -15.000000) " x="13" y="-3" width="4" height="36"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
+				</a>
+			</div>
+			<div class="header-bot">
+				<a href="#" class="header-bot__item _header-bot__item" onclick="o2.header.setActiveMenuItem(this, '1'); event.stopPropagation();">
+					<span>МАТЕРИАЛЫ ДЛЯ КРОВЛИ</span><span>КРОВЛЯ</span>
+					<div class="header-bot__item-close" onclick="o2.header.unsetActiveMenuItem(); event.stopPropagation();">
+						<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="13px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>menu-close</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Btn_menu-Copy-2" transform="translate(-15.000000, -15.000000)" fill="#FFFFFF">
+            <g id="menu-close" transform="translate(15.000000, 15.000000)">
+                <rect id="Rectangle-9-Copy" transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) " x="-2.6862915" y="9.3137085" width="28" height="4"></rect>
+                <rect id="Rectangle-9-Copy-2" transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) " x="-2.6862915" y="9.3137085" width="28" height="4"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
+					</div>
+				</a>
+				<a href="#" class="header-bot__item _header-bot__item" onclick="o2.header.setActiveMenuItem(this, '2'); event.stopPropagation();">
+					<span>ДЛЯ ФАСАДОВ</span><span>ФАСАД</span>
+					<div class="header-bot__item-close" onclick="o2.header.unsetActiveMenuItem(); event.stopPropagation();">
+						<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="13px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>menu-close</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Btn_menu-Copy-2" transform="translate(-15.000000, -15.000000)" fill="#FFFFFF">
+            <g id="menu-close" transform="translate(15.000000, 15.000000)">
+                <rect id="Rectangle-9-Copy" transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) " x="-2.6862915" y="9.3137085" width="28" height="4"></rect>
+                <rect id="Rectangle-9-Copy-2" transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) " x="-2.6862915" y="9.3137085" width="28" height="4"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
+					</div>
+				</a>
+				<a href="#" class="header-bot__item _header-bot__item" onclick="o2.header.setActiveMenuItem(this, '3'); event.stopPropagation();">
+					<span>ДЛЯ ЗАБОРОВ</span><span>ЗАБОР</span>
+					<div class="header-bot__item-close" onclick="o2.header.unsetActiveMenuItem(); event.stopPropagation();">
+						<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="13px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>menu-close</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Btn_menu-Copy-2" transform="translate(-15.000000, -15.000000)" fill="#FFFFFF">
+            <g id="menu-close" transform="translate(15.000000, 15.000000)">
+                <rect id="Rectangle-9-Copy" transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) " x="-2.6862915" y="9.3137085" width="28" height="4"></rect>
+                <rect id="Rectangle-9-Copy-2" transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) " x="-2.6862915" y="9.3137085" width="28" height="4"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
+					</div>
+				</a>
+				<a href="#" class="header-bot__item _header-bot__item" onclick="o2.header.setActiveMenuItem(this, '4'); event.stopPropagation();">
+					<span>ПРОЧИЕ МАТЕРИАЛЫ</span><span>ПРОЧЕЕ</span>
+					<div class="header-bot__item-close" onclick="o2.header.unsetActiveMenuItem(); event.stopPropagation();">
+						<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="13px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>menu-close</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Btn_menu-Copy-2" transform="translate(-15.000000, -15.000000)" fill="#FFFFFF">
+            <g id="menu-close" transform="translate(15.000000, 15.000000)">
+                <rect id="Rectangle-9-Copy" transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) " x="-2.6862915" y="9.3137085" width="28" height="4"></rect>
+                <rect id="Rectangle-9-Copy-2" transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) " x="-2.6862915" y="9.3137085" width="28" height="4"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
+					</div>
+				</a>
+				<a href="#" class="header-bot__item header-bot__item-search" onclick="o2.search(); event.stopPropagation();">
+					<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0.87293365" opacity="0.819180254">
+        <g id="TopPanelNew2" transform="translate(-1560.000000, -86.000000)" fill="#000000">
+            <g id="Group-3">
+                <path d="M1577.14286,101.085714 L1576.04571,101.085714 L1575.63429,100.674286 C1577.00571,99.1657143 1577.82857,97.1085714 1577.82857,94.9142857 C1577.82857,89.9771429 1573.85143,86 1568.91429,86 C1563.97714,86 1560,89.9771429 1560,94.9142857 C1560,99.8514286 1563.97714,103.828571 1568.91429,103.828571 C1571.10857,103.828571 1573.16571,103.005714 1574.67429,101.634286 L1575.08571,102.045714 L1575.08571,103.142857 L1581.94286,110 L1584,107.942857 L1577.14286,101.085714 L1577.14286,101.085714 Z M1569,101 C1565.66667,101 1563,98.3333333 1563,95 C1563,91.6666667 1565.66667,89 1569,89 C1572.33333,89 1575,91.6666667 1575,95 C1575,98.3333333 1572.33333,101 1569,101 L1569,101 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>
+					<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>close-btn</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Close_btn" transform="translate(-18.000000, -17.000000)" fill="#E11C32">
+            <g id="close-btn" transform="translate(18.000000, 17.000000)">
+                <rect id="Rectangle-29" transform="translate(15.000000, 15.000000) rotate(-315.000000) translate(-15.000000, -15.000000) " x="13" y="-3" width="4" height="36"></rect>
+                <rect id="Rectangle-29-Copy" transform="translate(15.000000, 15.000000) rotate(-45.000000) translate(-15.000000, -15.000000) " x="13" y="-3" width="4" height="36"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
+					<div class="search-form" onclick="event.stopPropagation();">
+						<input type="text" placeholder="ВВЕДИТЕ ЗАПРОС">
+						<button class="search-btn">Искать в каталоге</button>
+					</div>
+				</a>
+				<a href="#" class="header-bot__item" onclick="o2.header.setActiveMenuItem(this, '5'); event.stopPropagation();">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="22" viewBox="0 0 28 22"><defs><path id="b13la" d="M929 124V70h54v54z"/><path id="b13lb" d="M941 89v-4h28v4z"/><path id="b13lc" d="M941 98v-4h28v4z"/><path id="b13ld" d="M941 107v-4h28v4z"/></defs><g><g transform="translate(-941 -85)"><g><use fill="#fff" xlink:href="#b13la"/></g><g><use fill="#46a06f" xlink:href="#b13lb"/></g><g><use fill="#46a06f" xlink:href="#b13lc"/></g><g><use fill="#46a06f" xlink:href="#b13ld"/></g></g></g></svg>
+					<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>close-btn</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Close_btn" transform="translate(-18.000000, -17.000000)" fill="#E11C32">
+            <g id="close-btn" transform="translate(18.000000, 17.000000)">
+                <rect id="Rectangle-29" transform="translate(15.000000, 15.000000) rotate(-315.000000) translate(-15.000000, -15.000000) " x="13" y="-3" width="4" height="36"></rect>
+                <rect id="Rectangle-29-Copy" transform="translate(15.000000, 15.000000) rotate(-45.000000) translate(-15.000000, -15.000000) " x="13" y="-3" width="4" height="36"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
+				</a>
+
+			</div>
+		</div>
+	</div>
+</header>
+<div class="header__dropdown-menu header__dropdown-menu__menu" id="drop1" onclick="event.stopPropagation();">
+	<div class="header__dropdown-menu__mobile-full-text">
+		МАТЕРИАЛЫ ДЛЯ КРОВЛИ
+	</div>
+	<div class="header__dropdown-menu-left">
+		<div class="header__dropdown-menu-left-item">
+			<a href="/catalog2.html" class="header__dropdown-menu-left-item-title">
+				Основные (11)
+			</a>
+			<ul class="header__dropdown-menu-right-list">
+				<li><a href="/catalog3.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3.html"><span>Металлочерепица</span><span>14</span></a></li>
+			</ul>
+		</div>
+		<div class="header__dropdown-menu-left-item">
+			<a href="/catalog2.html#related" class="header__dropdown-menu-left-item-title">
+				Сопутсвующие (31)
+			</a>
+			<ul class="header__dropdown-menu-right-list">
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="header__dropdown-menu-right">
+		<div class="header__dropdown-menu-right-img">
+			<img src="images/dropdown-img.jpg" alt="">
+		</div>
+		<div class="header__dropdown-menu-right-descr">
+			Металлочерепица - это такая кровля, которая объединяет в себе твердость металла и непробиваемость черепа
+		</div>
+	</div>
+</div>
+<div class="header__dropdown-menu header__dropdown-menu__menu" id="drop2" onclick="event.stopPropagation();">
+	<div class="header__dropdown-menu__mobile-full-text">
+		ДЛЯ ФАСАДОВ
+	</div>
+	<div class="header__dropdown-menu-left">
+		<div class="header__dropdown-menu-left-item">
+			<a href="/catalog2.html" class="header__dropdown-menu-left-item-title">
+				Основные (22)
+			</a>
+			<ul class="header__dropdown-menu-right-list">
+				<li><a href="/catalog3.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3.html"><span>Металлочерепица</span><span>14</span></a></li>
+			</ul>
+		</div>
+		<div class="header__dropdown-menu-left-item">
+			<a href="/catalog2.html#related" class="header__dropdown-menu-left-item-title">
+				Сопутсвующие (31)
+			</a>
+			<ul class="header__dropdown-menu-right-list">
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="header__dropdown-menu-right">
+		<div class="header__dropdown-menu-right-img">
+			<img src="images/dropdown-img.jpg" alt="">
+		</div>
+		<div class="header__dropdown-menu-right-descr">
+			Металлочерепица - это такая кровля, которая объединяет в себе твердость металла и непробиваемость черепа
+		</div>
+	</div>
+</div>
+<div class="header__dropdown-menu header__dropdown-menu__menu" id="drop3" onclick="event.stopPropagation();">
+	<div class="header__dropdown-menu__mobile-full-text">
+		ДЛЯ ЗАБОРОВ
+	</div>
+	<div class="header__dropdown-menu-left">
+		<div class="header__dropdown-menu-left-item">
+			<a href="/catalog2.html" class="header__dropdown-menu-left-item-title">
+				Основные (33)
+			</a>
+			<ul class="header__dropdown-menu-right-list">
+				<li><a href="/catalog3.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3.html"><span>Металлочерепица</span><span>14</span></a></li>
+			</ul>
+		</div>
+		<div class="header__dropdown-menu-left-item">
+			<a href="/catalog2.html#related" class="header__dropdown-menu-left-item-title">
+				Сопутсвующие (31)
+			</a>
+			<ul class="header__dropdown-menu-right-list">
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="header__dropdown-menu-right">
+		<div class="header__dropdown-menu-right-img">
+			<img src="images/dropdown-img.jpg" alt="">
+		</div>
+		<div class="header__dropdown-menu-right-descr">
+			Металлочерепица - это такая кровля, которая объединяет в себе твердость металла и непробиваемость черепа
+		</div>
+	</div>
+</div>
+<div class="header__dropdown-menu header__dropdown-menu__menu" id="drop4" onclick="event.stopPropagation();">
+	<div class="header__dropdown-menu__mobile-full-text">
+		ПРОЧИЕ МАТЕРИАЛЫ
+	</div>
+	<div class="header__dropdown-menu-left">
+		<div class="header__dropdown-menu-left-item">
+			<a href="/catalog2.html" class="header__dropdown-menu-left-item-title">
+				Основные (44)
+			</a>
+			<ul class="header__dropdown-menu-right-list">
+				<li><a href="/catalog3.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3.html"><span>Металлочерепица</span><span>14</span></a></li>
+			</ul>
+		</div>
+		<div class="header__dropdown-menu-left-item">
+			<a href="/catalog2.html#related" class="header__dropdown-menu-left-item-title">
+				Сопутсвующие (31)
+			</a>
+			<ul class="header__dropdown-menu-right-list">
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+				<li><a href="/catalog3-banner.html"><span>Металлочерепица</span><span>14</span></a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="header__dropdown-menu-right">
+		<div class="header__dropdown-menu-right-img">
+			<img src="images/dropdown-img.jpg" alt="">
+		</div>
+		<div class="header__dropdown-menu-right-descr">
+			Металлочерепица - это такая кровля, которая объединяет в себе твердость металла и непробиваемость черепа
+		</div>
+	</div>
+</div>
+<div class="header__dropdown-menu header__mobile-menu  header__dropdown-menu__menu" id="drop5" onclick="event.stopPropagation();">
+	<div class="header__mobile-menu-left">
+		<div class="header__mobile-menu-title">Услуги</div>
+		<div class="header__mobile-menu-list">
+			<a href="#">Доставка по звонку</a>
+			<a href="#">Консультации</a>
+			<a href="#">Замеры и составление сметы</a>
+			<a href="#">Производство в размер</a>
+			<a href="#">Монтаж</a>
+		</div>
+		<div class="header__mobile-menu-static-pages-list">
+			<a href="#">Наши работы</a>
+			<a href="#">Организациям</a>
+			<a href="#">О компании</a>
+			<a href="#">Контакты</a>
+		</div>
+	</div>
+	<div class="header__mobile-menu-right">
+		<div class="contact-us-row__item contact-us-item__graph-work">
+			<div class="graph-work__header">Приходите к нам!</div>
+			<div class="graph-work__decr">Все покажем и расскажем</div>
+			<div class="graph-work__table">
+				<div class="graph-work__table-row">
+					<div class="graph-work__table-cell graph-work__table-cell-days">Пн-Пт</div>
+					<div class="graph-work__table-cell graph-work__table-cell-deliter"></div>
+					<div class="graph-work__table-cell graph-work__table-cell-work-time">9:00 - 18:00</div>
+				</div>
+				<div class="graph-work__table-row">
+					<div class="graph-work__table-cell graph-work__table-cell-days">Сб-Вс</div>
+					<div class="graph-work__table-cell graph-work__table-cell-deliter"></div>
+					<div class="graph-work__table-cell graph-work__table-cell-work-time">10:00 - 14:00</div>
+				</div>
+			</div>
+			<div class="graph-work__show-map">
+				<a href="#" class="show-map__link">Магазины на карте</a>
+			</div>
+		</div>
+		<a href="tel:+78412344102" class="header-top__info-num header-top__info-num__mobile-menu">+7 (8412) 34-41-02</a>
+		<button class="btn btn-fat header__mobile-menu-right-btn">ЗАКАЗАТЬ ЗВОНОК</button>
+	</div>
+</div>
+	<section class="breadcrumbs-wrapper">
+		<div class="breadcrumbs grey">
+			<div class="container">
+				<div class="breadcrumbs-wrapper">
+					<ul class="breadcrumbs-nav">
+						<li>
+							<a href="#">< Назад</a>
+						</li>
+					</ul>
+					<div class="breadcrumbs-nav-slider">
+						<a href="#" class="breadcrumbs-nav__item">Предыдущий</a>
+						<div class="breadcrumbs-nav__item"><b>2 </b> / 7</div>
+						<a href="#" class="breadcrumbs-nav__item">Следующий</a>
+					</div>
+					<h1 class="h2-style breadcrumbs-title breadcrumbs-title--no-transform">Согласие на обработку персональных данных</h1>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="processing-rules-wr">
+		<div class="container">
+			<div class="processing-rules__content">
+				<p class="processing-rules__content-text">
+					Настоящим, я (далее — Лицо), даю свое согласие ООО «Ваш дом», юридический адрес: ______________________________________________(далее — Компания) на обработку своих персональных данных, указанных при оформлении заявки на сайте Компании для обработки моего заказа, заявки или любого другого способа обращения в компаниию (далее Заказ), и коммуникации со мной в рамках обработки моего Заказа, а также иных сопряженных с этим целей в рамках действующего законодательства РФ и технических возможностей Компании.
+					<br>
+					<br>
+					Обработка персональных данных Лица может осуществляться с помощью средств автоматизации и/или без использования средств автоматизации в соответствии с действующим законодательством РФ и положениями Компании. Настоящее согласие Лица на обработку его/ее персональных данных, указанных при оформлении Заказа на сайте Компании, направляемых (заполненных) с использованием настоящего сайта, действует с момента оформления Заказа на сайте Компании до момента его отзыва. Согласие на обработку персональных данных, указанных при оформлении Заказа на сайте Компании, направляемых (заполненных) с использованием настоящего сайта, может быть отозвано Лицом при подаче письменного заявления (отзыва) в Компанию. Обработка персональных данных Лица прекращается в течение 2 месяцев с момента получения Компанией письменного заявления (отзыва) Лица и/или в случае достижения цели обработки и уничтожается в срок и на условиях, установленных законом, если не предусмотрено иное. Обезличенные персональные данные Лица могут использоваться Компанией в статистических (и иных исследовательских целей) после получения заявления (отзыва) согласия, а также после достижения целей, для которых настоящее согласие было получено.
+					<br>
+					<br>
+					Данный сайт позволяет ООО «Ваш дом» получать информацию, содержащую персональные данные Лица, а именно фамилия имя отчество, контактный телефон, адрес электронной почты, а также другие персональные данные, которые могут использоваться для идентификации Лица («Ваши персональные данные»), в случае, если Лицо добровольно предоставляет ее компании.
+					<br>
+					<br>
+					Лицо даёт согласие ООО «Ваш дом» на обработку своих персональных данных, а именно: фамилия имя отчество, контактный телефон, адрес электронной почты, а также всех персональных данных, которые необходимы для связи с Лицом и для оформления договоров.
+					<br>
+					<br>
+					В целях исполнения обязательств по договору Лицо предоставляет ООО «Ваш дом» право осуществлять любые действия (операции) со своими персональными данными без ограничения: сбор, запись, учет, систематизацию, хранение, уточнение (обновление, изменение), извлечение, накопление, обезличивание, блокирование, удаление, уничтожение; использование в статистических целях, в целях проведения анализа, в целях информирования Лица (с передачей по SMS или электронной почтой) о продуктах и услугах Компании, а также осуществлять любые иные действия с учетом действующего законодательства.Правила конфиденциальности
+					<br>
+					<br>
+					Любая иная информация, передаваемая Лицом в связи с посещением сайта («Иная информация», которая не является персональными данными Лица и не может использоваться для идентификации Лица) может включаться в базы данных, которые принадлежат ООО «Ваш дом» или их представителям. ООО «Ваш дом» сохраняет все права на эти базы данных и информацию, которая в них хранится. Иная информация, которую мы собираем, может включать Ваш IP-адрес и прочую информацию, собираемую посредством cookie-файлов (см. ниже).
+					<br>
+					<br>
+					Данный сайт может использовать технологию, известную как cookie-файл. Сookie-файл — это сообщение, которое веб-сервер высылает на компьютер Лица, когда Лицо заходит на сайт. При повторном посещении, наш сайт проверит, имеется ли на компьютере Лица один из наших сookie-файлов. Наши cookie-файлы увеличивают функциональность сайта и помогают нам более точно анализировать, как используется сайт.
+					<br>
+					<br>
+					Данный сайт использует адреса Интернет-протокола (IP). IP-адрес — это номер, присваиваемый компьютеру Интернет-провайдером для доступа к Интернету. Обычно IP-адрес изменяется всякий раз, когда вы входите в Интернет (это«динамичный» адрес). Тем не менее, если используется высокоскоростное соединение, в зависимости от обстоятельств, возможно, что IP-адрес или даже cookie-файл, который мы используем, содержит идентифицируемую информацию. Это происходит потому, что при некоторых видах высокоскоростного соединения Ваш IP-адрес не изменяется («статичен») и может ассоциироваться с компьютером Лица. Мы используем IP-адрес Лица для сообщения общей информации по использованию сайта, а также для его доработки.
+					<br>
+					<br>
+					Данный сайт использует технологию для определения местоположения Лица.
+					<br>
+					<br>
+					Лицо обязано покинуть данный сайт, если не хочет, чтобы вышеперечисленные данные (cookie, данные об IP-адресе и местоположении) обрабатывались.
+					<br>
+					<br>
+					Данный сайт не предназначен для лиц моложе 18 лет. Мы не собираем персональные данные лиц, которые по имеющейся у нас информации не достигли 18-летнего возраста. На данном сайте, где собирается информация, используется стандартное шифрование протокола защиты информации (SSL). Тем не менее, чтобы воспользоваться этой опцией, браузер должен поддерживать криптографическое закрытие (начиная с версии Internet Explorer 3.0 и далее). ООО «Ваш дом» оставляет за собой право предоставлять информацию государственным органам при соответствующих запросах или в случаях, предусмотренных законодательством.
+					<br>
+					<br>
+					Для удаления информации о Лице из наших контактных списков, необходимо обращаться по следующему адресу: ООО «Ваш дом»: 999999, г. Пенза, ул. Улица, д. 99, офис 999, тел.: +7 (8412) 34-41-02 или по е-mail: vashdom-pnz@yandex.ru
+					<br>
+					<br>
+					Лицо может продолжать получать материалы, пока ведется обновление наших списков. Периодически Правила конфиденциальности веб-сайта могут обновляться. После обновления данные правила будут доступны на настоящей странице.
+				</p>
+				<div class="file-link-wr">
+					<a href="#" class="file-link file-link--pdf">
+						<span class="file-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24"><defs><path id="7tzea" d="M368 2160h-17v-11h17v-3h-6v-6h-14v24h20z"/><path id="7tzeb" d="M363 2140v5h5z"/><path id="7tzec" d="M367 2157h-1v-5h4v1h-3v1h3v1h-3zm-2-1h-1v1h-3v-5h3v1h1zm-5-1h-3v2h-1v-5h4zm-5 2h-1v-1h1zm17 2v-9h-20v9z"/><path id="7tzed" d="M357 2154v-1h2v1z"/><path id="7tzee" d="M362 2156v-3h2v3z"/></defs><g><g transform="translate(-348 -2140)"><g><g><use fill="#e42339" xlink:href="#7tzea"/></g><g><use fill="#e42339" xlink:href="#7tzeb"/></g><g><use fill="#e42339" xlink:href="#7tzec"/></g><g><use fill="#e42339" xlink:href="#7tzed"/></g><g><use fill="#e42339" xlink:href="#7tzee"/></g></g></g></g></svg>
+						</span>
+						<span>Политика обработки персональных данных</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="footer">
+	<div class="container">
+		<div class="footer-top">
+			<div class="footer-logo">
+				<a href="/">
+					<img src="/images/icons/Logo.svg" alt="ваш дом">
+				</a>
+			</div>
+			<div class="footer-content">
+				<div class="footer-nav-wr">
+					<nav class="footer-nav">
+						<ul class="footer-nav__list">
+							<li>
+								<a href="/about.html">О компании</a>
+							</li>
+							<li>
+								<a href="/services.html">Наши услуги</a>
+							</li>
+							<li>
+								<a href="our-works.html">Готовые проекты</a>
+							</li>
+							<li>
+								<a href="contacts.html">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+					<nav class="footer-nav">
+						<ul class="footer-nav__list">
+							<li>
+								<a href="/catalog2.html">Материалы для кровли</a>
+							</li>
+							<li>
+								<a href="/catalog2.html">Материалы для фасада</a>
+							</li>
+							<li>
+								<a href="/catalog2.html">Заборы и ограждения</a>
+							</li>
+							<li>
+								<a href="/catalog2.html">Дополнительные материалы</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="footer-contacts">
+					<div class="footer-contacts__links">
+						<a href="tel:+7 (8412) 34-41-02">+7 (8412) 34-41-02</a>
+						<br>
+						<a href="mailto:vashdom-pnz@yandex.ru">vashdom-pnz@yandex.ru</a>
+					</div>
+					<div class="footer-contacts__addresses">
+						г. Пенза
+						<ul class="red-markered-list addresses-list">
+							<li>ул. Чкалова,19/Калинина, 22</li>
+							<li>ул. Новотерновская д.3, ТЦ "Форпост"</li>
+							<li>ул. Чаадаева 60Б</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="copyright-wr">
+			<div class="copyright-left">©　1995 - 2017   Ваш дом</div>
+			<div class="copyright-right">Разработано в студии «Семь пап!»</div>
+		</div>
+	</div>
+</footer>
+<div class="popup-overlay" onclick="o2.popups.closePopup()">
+	<div class="popup-wr popup-attach-wr" data-popup-id="1" onclick="event.stopPropagation();">
+		<div class="popup-close" onclick="o2.popups.closePopup()"></div>
+		<div class="popup-content">
+			<div class="popup__header h2-style">Узнать стоимость кровли, фасада, забора</div>
+			<form onsubmit="o2.popups.sendPopup(this, event)">
+				<div class="popup-inputs-wr">
+					<div class="input-row">
+						<input class="input _required" type="text" placeholder="Ваше имя *">
+					</div>
+					<div class="input-row">
+						<input class="input _required _phone-mask" type="phone" placeholder="Телефон *">
+					</div>
+					<div class="input-row">
+						<input class="input" type="email" placeholder="Электронная почта">
+					</div>
+				</div>
+				<div class="popup-actions-wr">
+					<div class="popup-actions__btn-row">
+						<label class="btn btn-thing btn--select-file">
+							<span class="file-icon">
+								<svg id="SVGDoc" width="16" height="18" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:avocode="https://avocode.com/" viewBox="0 0 16 18"><defs><path d="M670.31868,775.40551c-2.10989,2.12599 -5.62637,2.12599 -7.73626,0c-2.10989,-2.12598 -2.10989,-5.66929 0,-7.79527l7.38461,-7.44095c1.54726,-1.55905 4.07912,-1.55905 5.62638,0c1.54725,1.55906 1.54725,4.11024 0,5.66929l-5.97803,6.02362c-0.98461,0.99213 -2.53186,0.99213 -3.51648,0c-0.98461,-0.99212 -0.98461,-2.55118 0,-3.5433l5.27473,-5.31496l1.05494,1.06299l-5.27472,5.31496c-0.42198,0.4252 -0.42198,0.99213 0,1.41732c0.42197,0.4252 0.98461,0.4252 1.40659,0l5.97802,-6.02362c0.98462,-0.99213 0.98462,-2.55118 0,-3.54331c-0.98461,-0.99212 -2.53187,-0.99212 -3.51648,0l-7.38462,7.44095c-1.54725,1.55905 -1.54725,4.11023 0,5.66929c1.54726,1.55905 4.07912,1.55905 5.62638,0l6.68131,-6.73228l1.05495,1.06299z" id="Path-0"/></defs><desc>Generated with Avocode.</desc><g transform="matrix(1,0,0,1,-661,-759)"><g><title>Shape Copy</title><use xlink:href="#Path-0" fill="#e42339" fill-opacity="1"/></g></g></svg>
+							</span>
+							<span>ПРИКРЕПИТЬ ПРОЕКТ</span>
+							<input class="file-input" type="file" onchange="o2.forms.loadFile(this, event)">
+						</label>
+						<div class="popup-action-descr loaded-file-name-wr">
+							<div class="loaded-file-name"></div>
+						</div>
+					</div>
+					<div class="popup-actions__btn-row">
+						<button class="btn btn-fat">ОТПРАВИТЬ</button>
+						<div class="popup-action-descr popup-action-descr-policy">
+							Нажимая на кнопку, вы даете <a href="#">согласие</a> <br>
+							на обработку персональных данных и <br>
+							принимаете политику конфиденциальности
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="popup-wr popup-succes-wr" data-popup-id="2" onclick="event.stopPropagation();">
+		<div class="popup-close" onclick="o2.popups.closePopup()"></div>
+		<div class="popup-content">
+			<div class="popup__succes-header h2-style">Спасибо!</div>
+			<div class="popup-succes-text">
+				Ваше сообщение отправлено. <br>
+				Обычно мы перезваниваем в течение 10-30 минут <span>в рабочее время:</span>
+			</div>
+			<div class="popup-wourk-hours">
+				<div class="graph-work__table">
+					<div class="graph-work__table-row">
+						<div class="graph-work__table-cell graph-work__table-cell-days">Пн-Пт</div>
+						<div class="graph-work__table-cell graph-work__table-cell-deliter"></div>
+						<div class="graph-work__table-cell graph-work__table-cell-work-time">9:00 - 18:00</div>
+					</div>
+					<div class="graph-work__table-row">
+						<div class="graph-work__table-cell graph-work__table-cell-days">Сб-Вс</div>
+						<div class="graph-work__table-cell graph-work__table-cell-deliter"></div>
+						<div class="graph-work__table-cell graph-work__table-cell-work-time">10:00 - 14:00</div>
+					</div>
+				</div>
+			</div>
+			<div class="popup-success-actions-wr">
+				<div class="btn btn-fat">Продолжить</div>
+			</div>
+		</div>
+	</div>
+	<div class="popup-wr popup-litebox-wr" data-popup-id="3" onclick="event.stopPropagation();">
+		<div class="popup-close" onclick="o2.popups.closePopup()"></div>
+		<img src="" alt="">
+	</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	@@include('./components/pagehead.html')
+</head>
+<body onclick="o2.header.unsetActiveMenuItem();">
+	@@include('./components/header.html')
+	<section class="breadcrumbs-wrapper">
+		@@include('./components/breadcrumbs.html', {"color": "grey notitle", "text":"Каталог", "img":""})<!-- green dark grey -->
+	</section>
+	<section class="our-works-detail-wr">
+		<div class="container">
+			<div class="our-works-detail__row">
+				<div class="our-works-detail__left our-works-mobile-slider">
+					<img src="images/work_detail_1.jpg" alt="">
+					<img src="images/work_detail_2.jpg" alt="">
+					<img src="images/work_detail_3.jpg" alt="">
+				</div>
+				<div class="our-works-detail__right">
+					<h2 class="h3-style our-works-detail__header">Гибкая черепица «Tegola» 3</h2>
+					<div class="our-works-detail__description-wr">
+						<div class="our-works-detail__description-item">
+							<div class="our-works-description__header">ОСНОВНОЙ МАТЕРИАЛ:</div>
+							<div class="our-works-description__text">
+								<a href="#">Гибкая черепица Tegola, серия "Нордланд"</a>,
+								<a href="#">модель "Альпин"</a>, цвет "Синий с отливом"
+							</div>
+						</div>
+						<div class="our-works-detail__description-item">
+							<div class="our-works-description__header">ДОПОЛНИТЕЛЬНЫЕ МАТЕРИАЛЫ</div>
+							<div class="our-works-description__text">
+								<a href="#">Вентиляционный конек</a>, <a href="#">аэратор специальный</a>,
+								<a href="#">мансардные окна</a>
+							</div>
+						</div>
+						<div class="our-works-detail__description-item">
+							<div class="our-works-description__header">РАСПОЛОЖЕНИЕ ОБЪЕКТА</div>
+							<div class="our-works-description__text">
+								Пензенская область, поселок Заря
+							</div>
+						</div>
+					</div>
+					<div class="our-works-detail-btn__wr">
+						<a href="#" class="btn btn-fat">ПЕРЕЙТИ НА СТРАНИЦУ ТОВАРА</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="default-footer">
+		@@include('./components/contact-us.html')
+		@@include('./components/footer.html')
+	</div>
+</body>
+</html>

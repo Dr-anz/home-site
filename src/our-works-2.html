@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	@@include('./components/pagehead.html')
+</head>
+<body onclick="o2.header.unsetActiveMenuItem();">
+	@@include('./components/header.html')
+	<section class="breadcrumbs-wrapper">
+		@@include('./components/breadcrumbs.html', {"color": "green", "text":"НАШИ РАБОТЫ", "img":"images/icons/bread1.svg"})<!-- green dark grey -->
+	</section>
+	<section class="catalog-second-lvl our-works-second-lvl">
+		<div class="container">
+			<div class="catalog-second-wrapper">
+				<div class="row">
+					<div class="catalog-second-lvl__items">
+						@@include('./components/our-works3-item.html',{"descr":"", "title":"Металлочерепица \"Ваш дом\" 1", "img":"images/our_work_1.jpg"})
+						@@include('./components/our-works3-item.html',{"descr":"", "title":"Металлочерепица \"Ваш дом\" 2", "img":"images/our_work_2.jpg"})
+						@@include('./components/our-works3-item.html',{"descr":"", "title":"Металлочерепица \"Ваш дом\" 3", "img":"images/our_work_3.jpg"})
+						@@include('./components/our-works3-item.html',{"descr":"", "title":"Металлочерепица \"Ваш дом\" 4", "img":"images/our_work_4.jpg"})
+						@@include('./components/our-works3-item.html',{"descr":"", "title":"Металлочерепица \"Ваш дом\" 5", "img":"images/our_work_5.jpg"})
+						@@include('./components/our-works3-item.html',{"descr":"", "title":"Металлочерепица 1", "img":"images/our_work_6.jpg"})
+						@@include('./components/our-works3-item.html',{"descr":"", "title":"Металлочерепица 2", "img":"images/our_work_7.jpg"})
+						@@include('./components/our-works3-item.html',{"descr":"", "title":"Металлочерепица 3", "img":"images/our_work_8.jpg"})
+						@@include('./components/our-works3-item.html',{"descr":"", "title":"Металлочерепица 4", "img":"images/our_work_1.jpg"})
+						@@include('./components/our-works3-item.html',{"descr":"", "title":"Металлочерепица 5", "img":"images/our_work_2.jpg"})
+						@@include('./components/our-works3-item.html',{"descr":"", "title":"Металлочерепица 6", "img":"images/our_work_3.jpg"})
+						@@include('./components/our-works3-item.html',{"descr":"", "title":"Металлочерепица \"Ваш дом\" 1", "img":"images/our_work_4.jpg"})
+						@@include('./components/our-works3-item.html',{"descr":"", "title":"Металлочерепица \"Ваш дом\" 2", "img":"images/our_work_5.jpg"})
+						@@include('./components/our-works3-item.html',{"descr":"", "title":"Металлочерепица \"Ваш дом\" 3", "img":"images/our_work_6.jpg"})
+						@@include('./components/our-works3-item.html',{"descr":"", "title":"Металлочерепица \"Ваш дом\" 4", "img":"images/our_work_7.jpg"})
+						@@include('./components/our-works3-item.html',{"descr":"", "title":"Металлочерепица \"Ваш дом\" 5", "img":"images/our_work_8.jpg"})
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="default-footer">
+		@@include('./components/contact-us.html')
+		@@include('./components/footer.html')
+	</div>
+</body>
+</html>

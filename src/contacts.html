@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	@@include('./components/pagehead.html')
+</head>
+<body onclick="o2.header.unsetActiveMenuItem();">
+	@@include('./components/header.html')
+	<section class="breadcrumbs-wrapper">
+		@@include('./components/breadcrumbs.html', {"color": "grey", "text":"КОНТАКТЫ", "img":""})<!-- green dark grey -->
+	</section>
+	<div class="contacts-map-wr">
+		<div class="container">
+			<div class="contacts-map-row">
+				<div class="contacts-map__left">
+					<div id="contacts-ya-map" class="contacts-ya-map">
+						<div class="map-tolltip">
+							Всплывашка на карте
+						</div>
+					</div>
+				</div>
+				<div class="contacts-map__right">
+					<div class="custom-contacts-slider">
+						<div class="contacts-slider__top">
+							<div class="contacts-slider__top-header">
+								Наши магазины
+							</div>
+							<div class="contacts-slider__top-pagination">
+								<div class="top-pagination__arrow top-pagination__arrow--left" onclick="o2.sliders.contactSlider.prevSlide()">
+									<svg id="SVGDoc" width="15" height="11" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:avocode="https://avocode.com/" viewBox="0 0 15 11"><defs><path d="M1494.3104,335v1h12.79789l-4.09749,4.09749l0.70711,0.70711l5.28209,-5.28209l-0.01751,-0.01751l0.01751,-0.01751l-5.28209,-5.28209l-0.70711,0.70711l4.08749,4.08749z" id="Path-0"/></defs><desc>Generated with Avocode.</desc><g transform="matrix(1,0,0,1,-1494,-330)"><g><title>Combined Shape</title><use xlink:href="#Path-0" fill="#8e9390" fill-opacity="1"/></g></g></svg>
+								</div>
+								<div class="top-pagination__counter">
+									<span class="top-pagination__counter--current _contact-slide-current">1</span> / <span class="_contact-slide-count">3</span>
+								</div>
+								<div class="top-pagination__arrow top-pagination__arrow--right" onclick="o2.sliders.contactSlider.nextSlide()">
+									<svg id="SVGDoc" width="15" height="11" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:avocode="https://avocode.com/" viewBox="0 0 15 11"><defs><path d="M1494.3104,335v1h12.79789l-4.09749,4.09749l0.70711,0.70711l5.28209,-5.28209l-0.01751,-0.01751l0.01751,-0.01751l-5.28209,-5.28209l-0.70711,0.70711l4.08749,4.08749z" id="Path-0"/></defs><desc>Generated with Avocode.</desc><g transform="matrix(1,0,0,1,-1494,-330)"><g><title>Combined Shape</title><use xlink:href="#Path-0" fill="#8e9390" fill-opacity="1"/></g></g></svg>
+								</div>
+							</div>
+						</div>
+						<div class="contacts-slider__body">
+							<div class="custom-contact__slide" data-contact-id="0">
+								<div class="contact-images__slider">
+									<div class="contact-images__slide">
+										<img src="images/contact-img.jpg" alt="">
+									</div>
+									<div class="contact-images__slide">
+										<img src="images/contact-img.jpg" alt="">
+									</div>
+									<div class="contact-images__slide">
+										<img src="images/contact-img.jpg" alt="">
+									</div>
+								</div>
+								<div class="custom-contact-slide__info">
+									<div class="contact-slide-info__row contact-slide-info__address">
+										<div class="contact-slide-info__icon">
+											<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="22" viewBox="0 0 16 22"><defs><path id="64dja" d="M1235.14 638.5c-1.68 0-3-1.32-3-3s1.32-3 3-3 3 1.32 3 3-1.32 3-3 3zM1235 628c-4.46 0-8 3.41-8 7.7 0 5.72 8 14.3 8 14.3s8-8.58 8-14.3c0-4.29-3.54-7.7-8-7.7z"/></defs><g><g opacity=".78" transform="translate(-1227 -628)"><use fill="#19904f" xlink:href="#64dja"/></g></g></svg>
+										</div>
+										<div class="contact-slide-info__text">
+											<div class="contact-info__city">Г. ПЕНЗА</div>
+											<div class="contact-info__address _contact-address">ул. Чкалова,19 / Калинина, 22</div>
+										</div>
+									</div>
+									<div class="contact-slide-info__row contact-slide-info__work-hours">
+										<div class="contact-slide-info__icon">
+											<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18"><defs><path id="qkx7a" d="M1226 717c0-4.95 4.05-9 9-9s9 4.05 9 9-4.05 9-9 9-9-4.05-9-9zm9.5-5h-1.5v6l5.2 3.2.8-1.3-4.5-2.7z"/></defs><g><g transform="translate(-1226 -708)"><use fill="#4ba875" xlink:href="#qkx7a"/></g></g></svg>
+										</div>
+										<div class="contact-slide-info__text">
+											<div class="contact-hours__table">
+												<div class="contact-hours__row">
+													<div class="contact-hours__cell contact-hours__cell-days">ПН-ПТ</div>
+													<div class="contact-hours__cell">с 9:00 до 18:00</div>
+												</div>
+												<div class="contact-hours__row">
+													<div class="contact-hours__cell contact-hours__cell-days">СБ</div>
+													<div class="contact-hours__cell">с 10:00 до 14:00</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="contact-slide-info__row contact-slide-info__contact-data">
+										<div class="contact-slide-info__icon">
+											<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18"><defs><path id="3i72a" d="M1242 794h2v2h-2zm1 6.5c.6 0 1 .4 1 1v3.5c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.5 3.5.2.3.1.7-.2 1l-2.2 2.2c1.5 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.2.7-.3 1-.2 1.2.4 2.4.6 3.6.6zm-3-6.5v2h-2v-2zm-4 0v2h-2v-2z"/></defs><g><g transform="translate(-1226 -788)"><use fill="#4ba875" xlink:href="#3i72a"/></g></g></svg>
+										</div>
+										<div class="contact-slide-info__text">
+											<a href="tel:+7 (8412) 34-41-02">+7 (8412) 34-41-02</a> (доб. 101, 102, 103) <br>
+											<a href="mailto:vashdom-pnz@yandex.ru">vashdom-pnz@yandex.ru</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="company-legal-info">
+				<h2 class="h3-style">ООО «Ваш Дом»</h2>
+				<div class="legal-info">
+					ОГРН 1075834003035 <br>
+					ИНН 5834038547 <br>
+					КПП 583401001 <br>
+					Юр. адрес: 440061, г. Пенза, ул. Пролетарская, д. 4/35 <br>
+					По вопросам сотрудничества и оптовых продаж — <a href="mailto:vashdom-pnz@yandex.ru">vashdom-pnz@yandex.ru</a>, Екатерина Макареева <br>
+					Написать письмо директору — <a href="mailto:director@vashdom.ru">director@vashdom.ru</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="default-footer">
+		@@include('./components/contact-us.html')
+		@@include('./components/footer.html')
+	</div>
+</body>
+</html>

@@ -1,0 +1,101 @@
+.organisations
+{
+	display: block;
+	background-color: #fff;
+	padding-bottom: 5.4rem;
+	padding-top: 3rem;
+	.tabs-content__item-title
+	{
+		margin-bottom: 2rem;
+	}
+	.order-list
+	{
+		margin-bottom: 0;
+		li
+		{
+			margin-bottom: 1rem;
+			padding-left: 2.4rem;
+			&:last-child
+			{
+				margin-bottom: 0;
+			}
+			&:before
+			{
+				top: 0.25rem;
+			}
+		}
+	}
+	.order-list__info
+	{
+		font-size: 1rem;
+	}
+	.tabs-content__item-undertitle
+	{
+		font-size: 1rem;
+	}
+}
+.organisations-wrapper
+{
+	background-color: $grey;
+	padding-bottom: 3.6rem;
+}
+.organisations-contuct-us__title
+{
+	text-align: center;
+	margin-bottom: 2.5rem;
+}
+.organisations-contuct-us
+{
+	background-color: #fff;
+	padding: 3rem;
+}
+.organisations-contuct-us__wrapper
+{
+	background-color: $grey;
+	padding-top: 2rem;
+	padding-bottom: 5.5rem;
+}
+.organisations-contuct-us__head
+{
+	margin-bottom: 2rem;
+}
+.organisations-contuct-us__text
+{
+	margin-bottom: 1.5rem;
+}
+.organisations-contuct-us__contacts
+{
+	font-weight: 600;
+	margin-bottom: 1.5rem;
+}
+.reviews-slider__item
+{
+	height: 21.4375rem;
+	img
+	{
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+@media (max-width: $tablet)
+{
+	.tabs-content__item-text-block
+	{
+		max-width: 95%;
+		.order-list__info
+		{
+			br
+			{
+				display: none;
+			}
+		}
+	}
+	.organisations-contuct-us__text
+	{
+		br
+		{
+			display: none;
+		}
+	}
+}

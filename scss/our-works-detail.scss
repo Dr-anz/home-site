@@ -1,0 +1,147 @@
+.our-works-detail-wr
+{
+	background-color: $grey;
+	padding-bottom: 5.5rem;
+}
+.our-works-detail__row
+{
+	display: flex;
+	background-color: #fff;
+	justify-content: space-between;
+	box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.04);
+	padding: 3rem;
+	padding-top: 2.5rem;
+	padding-bottom: 4.2rem;
+}
+.our-works-second-lvl
+{
+	padding: 3rem;
+}
+.our-works-detail__left
+{
+	line-height: 0;
+	width: 51.5rem;
+	img
+	{
+		width: 100%;
+		display: block;
+		padding-bottom: 2rem;
+	}
+}
+.our-works-mobile-slider
+{
+	.slick-slide
+	{
+		margin: 0;
+	}
+	.slick-dots li button
+	{
+		background-color: #d8d8d8;
+	}
+}
+.our-works-detail__right
+{
+	flex: 1;
+	margin-left: 3rem;
+}
+.our-works-detail__description-wr
+{
+	padding-top: 1.7rem;
+	padding-bottom: 2.25rem;
+}
+.our-works-detail__description-item
+{
+	padding-bottom: 1.3rem;
+	&:last-child
+	{
+		padding-bottom: 0;
+	}
+}
+.our-works-description__header
+{
+	text-transform: uppercase;
+	font-size: 0.875rem;
+	color: rgba($black, 0.4);
+	padding-bottom: 0.5rem;
+}
+.our-works-description__text
+{
+	font-size: 0.875rem;
+	line-height: 1.5rem;
+	a
+	{
+		border-bottom: 0.063rem solid rgba($black, 0.2);
+		transition: border-color 0.3s;
+		&:hover
+		{
+			border-color: rgba($black, 0.4);
+		}
+	}
+}
+.our-works-detail-btn__wr
+{
+	.btn
+	{
+		max-width: 19.25rem;
+	}
+}
+@media (max-width: $tablet)
+{
+	.our-works-detail-wr
+	{
+		.container
+		{
+			padding: 0;
+		}
+	}
+	.our-works-detail__row
+	{
+		padding-left: 0.75rem;
+		padding-right: 0.75rem;
+	}
+	.our-works-detail__left
+	{
+		width: 33.5rem;
+		img
+		{
+			padding-bottom: 1.65rem;
+		}
+	}
+	.our-works-detail__description-item:last-child
+	{
+		padding-top: 0.5rem;
+	}
+}
+@media (max-width: $mobile)
+{
+	.our-works-detail-wr
+	{
+		background-color: transparent;
+		padding-bottom: 0;
+	}
+	.our-works-detail__row
+	{
+		padding-left: 0;
+		padding-right: 0;
+		padding-top: 0;
+		flex-direction: column;
+		box-shadow: none;
+	}
+	.our-works-mobile-slider.slick-dotted
+	{
+		margin-bottom: 3.5rem;
+	}
+	.our-works-detail__left
+	{
+		width: 100%;
+		img
+		{
+			padding-bottom: 0;
+		}
+	}
+	.our-works-detail__right
+	{
+		margin-left: 1rem;
+		margin-right: 0.5rem;
+	}
+}

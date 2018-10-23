@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	@@include('./components/pagehead.html')
+</head>
+<body onclick="o2.header.unsetActiveMenuItem();">
+	<div class="container">
+		<h1 style="text-align: center; padding-bottom: 30px;">Стандартные компоненты</h1>
+	</div>
+	<div class="container">
+		<h2>элементы интерфейса</h2>
+		<p>Список с красными маркерами ".red-markered-list"</p>
+		<ul class="red-markered-list">
+			<li>first-item</li>
+			<li>first-item</li>
+			<li>first-item</li>
+			<li>first-item</li>
+			<li>first-item</li>
+		</ul>
+		<p>Кнопки</p>
+		<button class="btn btn-thing">btn btn-thing</button>
+		<button class="btn btn-fat">btn btn-fat</button>
+		<p>Типографика</p>
+		<h1 class="h1-style">h1 header ".h1-style"</h1>
+		<h2 class="h2-style">h2 header ".h2-style"</h2>
+		<h3 class="h3-style">h3 header ".h3-style"</h3>
+	</div>
+	<div class="container">
+		<h2>Шапка</h2>
+	</div>
+	@@include('./components/header.html')
+	<div class="container">
+		<h2>Связаться с нами</h2>
+	</div>
+	@@include('./components/contact-us.html')
+	<div class="container">
+		<h2>Футер</h2>
+	</div>
+	@@include('./components/Footer.html')
+
+</body>
+</html>

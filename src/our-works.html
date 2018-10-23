@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	@@include('./components/pagehead.html')
+</head>
+<body onclick="o2.header.unsetActiveMenuItem();">
+	@@include('./components/header.html')
+	<section class="breadcrumbs-wrapper">
+		@@include('./components/breadcrumbs.html', {"color": "green", "text":"НАШИ РАБОТЫ", "img":"images/icons/bread1.svg"})<!-- green dark grey -->
+	</section>
+	<section class="catalog-second-lvl our-works-second-lvl">
+		<div class="container">
+			<div class="catalog-second-wrapper">
+				<div class="row">
+					<div class="catalog-second-lvl__items">
+						@@include('./components/our-works2-item.html',{"descr":"", "title":"Металлочерепица (18)", "img":"images/dropdown-img.jpg"})
+						@@include('./components/our-works2-item.html',{"descr":"", "title":"Кровельный профнастил (2)", "img":"images/catalog-2.png"})
+						@@include('./components/our-works2-item.html',{"descr":"", "title":"Гибкая черепица (25)", "img":"images/catalog-3.png"})
+						@@include('./components/our-works2-item.html',{"descr":"", "title":"Керамическая черепица (5)", "img":"images/catalog-4.png"})
+						@@include('./components/our-works2-item.html',{"descr":"", "title":"Виниовый сайдинг (2)", "img":"images/catalog-5.png"})
+						@@include('./components/our-works2-item.html',{"descr":"", "title":"Водосточная система ПВХ (1)", "img":"images/catalog-2.png"})
+						@@include('./components/our-works2-item.html',{"descr":"", "title":"Цокольные панели (3)", "img":"images/catalog-3.png"})
+						@@include('./components/our-works2-item.html',{"descr":"", "title":"Мансардные окна (1)", "img":"images/catalog-4.png"})
+						@@include('./components/our-works2-item.html',{"descr":"", "title":"Дымник (1)", "img":"images/dropdown-img.jpg"})
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="default-footer">
+		@@include('./components/contact-us.html')
+		@@include('./components/footer.html')
+	</div>
+</body>
+</html>

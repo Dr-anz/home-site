@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	@@include('./components/pagehead.html')
+</head>
+<body onclick="o2.header.unsetActiveMenuItem();">
+	@@include('./components/header.html')
+	<section class="breadcrumbs-wrapper">
+		<div class="breadcrumbs grey search">
+			<div class="container">
+				<div class="breadcrumbs-wrapper">
+					<ul class="breadcrumbs-nav">
+						<li>
+							<a href="#">Главная</a>
+						</li>
+						<li>
+							<a href="#">Каталог</a>
+						</li>
+					</ul>
+					<div class="breadcrumbs-nav-slider">
+						<a href="#" class="breadcrumbs-nav__item">Предыдущий</a>
+						<div class="breadcrumbs-nav__item"><b>2 </b> / 7</div>
+						<a href="#" class="breadcrumbs-nav__item">Следующий</a>
+					</div>
+					<h1 class="h1-style breadcrumbs-title">РЕЗУЛЬТАТЫ ПОИСКА</h1>
+				</div>
+				<div class="search-result">
+					По запросу в каталоге: «Гибкая черепица»
+				</div>
+				<div class="breadcrumbs__green-img">
+					<img src="" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="catalog-third-lvl">
+		<div class="container">
+			<div class="catalog-third-wrapper">
+				<div class="row">
+					<div class="catalog-third-lvl__items">
+						@@include('./components/catalog3-item.html', {"img":"images/dropdown-img.jpg", "title":"Гибкая черепица<br>IKO Cambridge 30 & 50 AR"})
+						@@include('./components/catalog3-item.html', {"img":"images/catalog-2.png", "title":"Гибкая черепица<br>IKO Cambridge 30 & 50 AR"})
+						@@include('./components/catalog3-item.html', {"img":"images/catalog-3.png", "title":"Гибкая черепица<br>IKO Cambridge 30 & 50 AR"})
+						@@include('./components/catalog3-item.html', {"img":"images/catalog-4.png", "title":"Гибкая черепица<br>IKO Cambridge 30 & 50 AR"})
+						@@include('./components/catalog3-item.html', {"img":"images/catalog-5.png", "title":"Гибкая черепица<br>IKO Cambridge 30 & 50 AR"})
+						@@include('./components/catalog3-item.html', {"img":"images/catalog-2.png", "title":"Гибкая черепица<br>IKO Cambridge 30 & 50 AR"})
+						@@include('./components/catalog3-item.html', {"img":"images/catalog-3.png", "title":"Гибкая черепица<br>IKO Cambridge 30 & 50 AR"})
+						@@include('./components/catalog3-item.html', {"img":"images/catalog-4.png", "title":"Гибкая черепица<br>IKO Cambridge 30 & 50 AR"})
+						@@include('./components/catalog3-item.html', {"img":"images/catalog-5.png", "title":"Гибкая черепица<br>IKO Cambridge 30 & 50 AR"})
+						@@include('./components/catalog3-item.html', {"img":"images/catalog-2.png", "title":"Гибкая черепица<br>IKO Cambridge 30 & 50 AR"})
+						@@include('./components/catalog3-item.html', {"img":"images/catalog-3.png", "title":"Гибкая черепица<br>IKO Cambridge 30 & 50 AR"})
+						@@include('./components/catalog3-item.html', {"img":"images/catalog-4.png", "title":"Гибкая черепица<br>IKO Cambridge 30 & 50 AR"})
+						@@include('./components/catalog3-item.html', {"img":"images/catalog-5.png", "title":"Гибкая черепица<br>IKO Cambridge 30 & 50 AR"})
+						@@include('./components/catalog3-item.html', {"img":"images/catalog-2.png", "title":"Гибкая черепица<br>IKO Cambridge 30 & 50 AR"})
+						@@include('./components/catalog3-item.html', {"img":"images/catalog-3.png", "title":"Гибкая черепица<br>IKO Cambridge 30 & 50 AR"})
+						@@include('./components/catalog3-item.html', {"img":"images/catalog-4.png", "title":"Гибкая черепица<br>IKO Cambridge 30 & 50 AR"})
+					</div>
+					<div class="catalog__show-more">
+						<button class="btn">Показать больше</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="default-footer">
+		@@include('./components/contact-us.html')
+		@@include('./components/footer.html')
+	</div>
+</body>
+</html>
